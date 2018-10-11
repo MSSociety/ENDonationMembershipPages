@@ -1,0 +1,68 @@
+input[type=checkbox], input[type=radio] {
+  -webkit-appearance: initial;
+  appearance: initial;
+  position: relative;
+  z-index: 100;
+  margin-right: 5px;
+  border: 1px solid rgb(74, 74, 74);
+  border-radius: 5px;
+  background: #ffffff;
+  line-height: 0.875rem;
+  height: 20px;
+  width: 20px;
+}
+
+input[type=checkbox]:checked:after, input[type=radio]:checked:after {
+  content: "✓";
+  color: #EF662F;
+  font-family: 'SSStandard';
+  font-size: 10.4px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+input[type=checkbox] ~ label, input[type=radio] ~ label {
+  font-size: 16px;
+}
+
+.en__field--NOT_TAGGED_5 {
+  text-align: center;
+}
+
+.en__field--NOT_TAGGED_5 input {
+  margin-top: 6px;
+}
+
+.en__field--NOT_TAGGED_5 label {
+  display: inline-block;
+  position: relative;
+  margin-left: -35px;
+  margin-right: 15px;
+  padding-left: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label {
+  border-radius: 5px;
+  background: #EF662F;
+  color: #ffffff;
+}
+
+.en__field--NOT_TAGGED_5 input:checked, .en__field--NOT_TAGGED_5 input:hover, .en__field--NOT_TAGGED_5 label:hover ~ input {
+  border: 1px solid #ffffff;
+}
