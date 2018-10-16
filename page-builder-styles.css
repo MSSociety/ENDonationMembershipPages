@@ -198,3 +198,38 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     display: inline-block;
     width: 74%;
 }
+
+/* Gift aid declaration */
+
+.en__field--gift-aid-declaration {
+    background-color: white;
+    padding: 15px;
+}
+
+.en__field--gift-aid-declaration label {
+    width: 100%;
+    font-weight: bold;
+    background-image: url(https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=13349);
+    background-size: 63px 29px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 68px;
+}
+
+.en__field--gift-aid-declaration label::before {
+    content: "Just tick, ";
+    color: #ff6600;
+}
+
+.en__field--gift-aid-declaration div label {
+    display: inline;
+    line-height: 1.3;
+    font-size: .9em;
+    font-weight: normal;
+    background-image: none;
+    padding-left: 0;
+}
+
+.en__field--gift-aid-declaration div label::before {
+    content: none;
+}
