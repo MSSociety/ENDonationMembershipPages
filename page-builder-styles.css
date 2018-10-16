@@ -1,7 +1,7 @@
 .en__field__element, .en__field__element--text, .en__field__input--calendar, .en__field__input--email,
  .en__field__input--number, .en__field__input--password, .en__field__input--telephone, .en__field__input--text,
   .en__field__input--textarea, .en__field__element--radio {
-    width: 100%;
+    width: 100% !important;
 }
 
 select, .en__field__input--select {
