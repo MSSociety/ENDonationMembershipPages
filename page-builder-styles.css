@@ -76,6 +76,8 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     color: #EF662F;
 }
 
+/* en__field--NOT_TAGGED_5 = Monthly/One-off */
+
 .en__field--NOT_TAGGED_5 {
   text-align: center;
 }
@@ -110,6 +112,12 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__field--NOT_TAGGED_5 input:checked, .en__field--NOT_TAGGED_5 input:hover, .en__field--NOT_TAGGED_5 label:hover ~ input {
   border: 1px solid #ffffff;
 }
+
+.en__field--NOT_TAGGED_5.en__mandatory label::after {
+    content: '';
+}
+
+/* en__field--NOT_TAGGED_10 = Donation amount */
 
 .en__field--NOT_TAGGED_10 input[type=radio] {
     display: none;
@@ -165,6 +173,10 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 }
 .en__field--NOT_TAGGED_10 label.en__field__label--item {
     display: block;
+}
+
+.en__field--NOT_TAGGED_10.en__mandatory label::after {
+    content: '';
 }
 
 .en__field--title {
