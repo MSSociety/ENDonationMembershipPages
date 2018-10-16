@@ -198,6 +198,14 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     width: 74%;
 }
 
+.en__field--postcode {
+    background-color: #d0d0d0;
+    border-radius: 8px;
+    padding: 10px 5px 5px 10px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
 .en__field--postcode .en__field__input--text {
     width: 250px !important;
 }
