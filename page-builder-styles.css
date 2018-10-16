@@ -118,3 +118,24 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     background-repeat: no-repeat;
     background-position: 5px center;
 }
+
+.en__submit button {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background: #EF662F;
+    border: none;
+    border-radius: 7px;
+    color: #FFF;
+    transition: all .25s ease;
+    font: inherit;
+    font-size: 1.425rem;
+    margin: 0;
+    position: relative;
+    max-width: 250px;
+    text-align: center;
+    display: block;
+    padding: 15px 40px;
+    background-image: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sbmt-arrow.png?v=1471960309000);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
