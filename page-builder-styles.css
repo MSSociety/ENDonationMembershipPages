@@ -1,5 +1,17 @@
-.en__field__element--radio {
+.en__field__element, .en__field__element--text, .en__field__input--calendar, .en__field__input--email,
+ .en__field__input--number, .en__field__input--password, .en__field__input--telephone, .en__field__input--text,
+  .en__field__input--textarea, .en__field__element--radio {
     width: 100%;
+}
+
+select, .en__field__input--select {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 15px 5px 15px 15px;
+    background: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    margin-left: 0;
 }
 
 input[type=checkbox], input[type=radio] {
