@@ -180,7 +180,6 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 }
 
 /* Sort code */
-
 .en__field--NOT_TAGGED_9 .en__field__input--text {
     width: 250px !important;
 }
@@ -197,6 +196,10 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__field--firstName {
     display: inline-block;
     width: 74%;
+}
+
+.en__field--postcode .en__field__input--text {
+    width: 250px !important;
 }
 
 /* Gift aid declaration */
