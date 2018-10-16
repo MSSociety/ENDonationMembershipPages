@@ -7,7 +7,7 @@
 select, .en__field__input--select {
     font-family: inherit;
     font-size: inherit;
-    padding: 15px 5px 15px 15px;
+    padding: 15px 5px 15px 15px !important;
     background: #FFF;
     border: 1px solid #4A4A4A;
     border-radius: 5px;
