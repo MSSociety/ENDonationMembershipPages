@@ -252,6 +252,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     background-color: #d4d4d4;
     border-radius: 2px;
     padding: 8px 15px;
+    padding-bottom: 8px !important;
     margin-bottom: 15px;
 }
 
