@@ -1,3 +1,7 @@
+.en__field__element--radio {
+    width: 100%;
+}
+
 input[type=checkbox], input[type=radio] {
   -webkit-appearance: initial;
   appearance: initial;
@@ -65,4 +69,54 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 
 .en__field--NOT_TAGGED_5 input:checked, .en__field--NOT_TAGGED_5 input:hover, .en__field--NOT_TAGGED_5 label:hover ~ input {
   border: 1px solid #ffffff;
+}
+
+.en__field--NOT_TAGGED_10 input[type=radio] {
+    display: none;
+}
+
+.en__field--NOT_TAGGED_10 .en__field__item {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.en__field--NOT_TAGGED_10 label {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 34px !important;
+    text-align: center;
+    padding: 18px 12px;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.en__field--NOT_TAGGED_10 label:hover, .en__field--NOT_TAGGED_10 input[type=radio]:checked ~ label {
+    background-color: #EF662F;
+    color: #FFF;
+    border: 1px solid #EF662F;
+}
+
+.en__field--NOT_TAGGED_10 input[type=text] {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    font-size: 34px !important;
+    text-align: left;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 28px;
+    padding-right: 12px;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    background-image: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sterling-symbol.png?v=1471621584000);
+    background-repeat: no-repeat;
+    background-position: 5px center;
 }
