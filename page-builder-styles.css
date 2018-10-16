@@ -166,3 +166,17 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__field--NOT_TAGGED_10 label.en__field__label--item {
     display: block;
 }
+
+.en__field--title {
+    display: inline-block;
+    width: 25%;
+}
+
+.en__field--title .en__field__input--select {
+    min-width: 50px;
+}
+
+.en__field--firstName {
+    display: inline-block;
+    width: 74%;
+}
