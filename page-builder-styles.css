@@ -56,6 +56,10 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     background-position: 90% center;
 }
 
+.en__mandatory label::after {
+    content: ' *';
+}
+
 .en__field__error {
     color: #EF662F;
 }
