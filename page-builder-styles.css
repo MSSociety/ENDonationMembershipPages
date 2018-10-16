@@ -244,3 +244,17 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__field--gift-aid-declaration div label::before {
     content: none;
 }
+
+/* Marketing permissions */
+
+.en__field--NOT_TAGGED_58, .en__field--NOT_TAGGED_59, .en__field--NOT_TAGGED_60, .en__field--NOT_TAGGED_61 {
+    display: block;
+    background-color: #d4d4d4;
+    border-radius: 2px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+}
+
+.en__field--NOT_TAGGED_58.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_59.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_60.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_61.en__mandatory .en__field__item label::after {
+    content: '';
+}
