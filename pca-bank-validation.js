@@ -44,8 +44,8 @@ function BankAccountValidation_Interactive_Validate_v2_00(Key, AccountNumber, So
 					sortCodeObscured = replaceForChars(SortCode, 4);
           accountNumberObscured = replaceForChars(AccountNumber, 4);
 
-					$('#Sort_Code_TY').val(sortCodeObscured);
-					$('#Account_Number_TY').val(accountNumberObscured);
+					$('input[name="supporter.NOT_TAGGED_50"]').val(accountNumberObscured); // Sort code TY
+          $('input[name="supporter.NOT_TAGGED_51"]').val(sortCodeObscured); // Account number TY
 				} else if ( data.Items[0].IsCorrect === false ) {
 					// Something's not right. Show the error message about re-checking account details and make sure the submit button is disabled
 					$("#bank-val-msg").css("display","block");
