@@ -259,7 +259,3 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__field--NOT_TAGGED_58.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_59.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_60.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_61.en__mandatory .en__field__item label::after {
     content: '';
 }
-
-.en__field--address1, .en__field--address2, .en__field--city, .en__field--region, .en__field--country {
-    display: none;
-}
