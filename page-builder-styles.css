@@ -259,3 +259,13 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__field--NOT_TAGGED_58.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_59.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_60.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_61.en__mandatory .en__field__item label::after {
     content: '';
 }
+
+.en__field--ccvv {
+    display: inline-block;
+    width: 30%;
+}
+
+.en__field--ccexpire {
+    display: inline-block;
+    width: 40%;
+}
