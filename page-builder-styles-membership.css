@@ -39,3 +39,7 @@
 .en__field--NOT_TAGGED_53 label {
   font-size: 1.2em;
 }
+
+.en__field--NOT_TAGGED_53 .en__field__item {
+  margin-right: 10px;
+}
