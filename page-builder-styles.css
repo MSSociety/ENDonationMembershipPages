@@ -28,6 +28,11 @@ input[type=checkbox]:not(.pbo__input__checkbox), input[type=radio]:not(.pbo__inp
   width: 20px;
 }
 
+.EN__RootElement input[type=radio] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
 input[type=checkbox]:not(.pbo__input__checkbox):checked:after, input[type=radio]:not(.pbo__input__checkbox):checked:after {
   content: "✓";
   color: #EF662F;
