@@ -28,3 +28,14 @@
 .en__field--NOT_TAGGED_57 label:hover, .en__field--NOT_TAGGED_57 input:checked ~ label, .en__field--NOT_TAGGED_57 input:hover ~ label {
   background-color: #EF662F !important;
 }
+
+/* Additional donation */
+
+.en__field--NOT_TAGGED_53 {
+  background-color: #f4f4f4;
+  padding: 15px 5% 0px 5%;
+}
+
+.en__field--NOT_TAGGED_53 label {
+  font-size: 1.2em;
+}
