@@ -80,17 +80,17 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     color: #EF662F;
 }
 
-/* Gift Type (NB this is both Monthly/One-off and First-time member/Renewing) */
+/* Gift Type (NB this is both Monthly/One-off and First-time member/Renewing) and Subscription Type */
 
-.en__field--NOT_TAGGED_5 {
+.en__field--NOT_TAGGED_5, .en__field--NOT_TAGGED_56, .en__field--NOT_TAGGED_57 {
   text-align: center;
 }
 
-.en__field--NOT_TAGGED_5 input {
+.en__field--NOT_TAGGED_5 input, .en__field--NOT_TAGGED_56 input, .en__field--NOT_TAGGED_57 input {
   margin-top: 6px;
 }
 
-.en__field--NOT_TAGGED_5 label {
+.en__field--NOT_TAGGED_5 label, .en__field--NOT_TAGGED_56 label, .en__field--NOT_TAGGED_57 label {
   display: inline-block;
   position: relative;
   margin-left: -35px;
@@ -107,17 +107,21 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
   user-select: none;
 }
 
-.en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label {
+.en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label,
+.en__field--NOT_TAGGED_56 label:hover, .en__field--NOT_TAGGED_56 input:checked ~ label, .en__field--NOT_TAGGED_56 input:hover ~ label,
+.en__field--NOT_TAGGED_57 label:hover, .en__field--NOT_TAGGED_57 input:checked ~ label, .en__field--NOT_TAGGED_57 input:hover ~ label {
   border-radius: 5px;
   background: #EF662F;
   color: #ffffff;
 }
 
-.en__field--NOT_TAGGED_5 input:checked, .en__field--NOT_TAGGED_5 input:hover, .en__field--NOT_TAGGED_5 label:hover ~ input {
+.en__field--NOT_TAGGED_5 input:checked, .en__field--NOT_TAGGED_5 input:hover, .en__field--NOT_TAGGED_5 label:hover ~ input,
+.en__field--NOT_TAGGED_56 input:checked, .en__field--NOT_TAGGED_56 input:hover, .en__field--NOT_TAGGED_56 label:hover ~ input,
+.en__field--NOT_TAGGED_57 input:checked, .en__field--NOT_TAGGED_57 input:hover, .en__field--NOT_TAGGED_57 label:hover ~ input {
   border: 1px solid #ffffff;
 }
 
-.en__field--NOT_TAGGED_5.en__mandatory label::after {
+.en__field--NOT_TAGGED_5.en__mandatory label::after, .en__field--NOT_TAGGED_56.en__mandatory label::after, .en__field--NOT_TAGGED_57.en__mandatory label::after {
     content: '';
 }
 

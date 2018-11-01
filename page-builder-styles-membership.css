@@ -1,18 +1,15 @@
 /* Gift Type (NB for donation pages this is Monthly/One-off, here for membership it is First-time member/Renewing) */
+/* and Subscription Type */
 
-.en__field--NOT_TAGGED_5 {
-  
-}
-
-.en__field--NOT_TAGGED_5 .en__field__item {
+.en__field--NOT_TAGGED_5 .en__field__item, .en__field--NOT_TAGGED_56 .en__field__item, .en__field--NOT_TAGGED_57 .en__field__item {
   width: 48% !important;
 }
 
-.en__field--NOT_TAGGED_5 input {
+.en__field--NOT_TAGGED_5 input, .en__field--NOT_TAGGED_56 input, .en__field--NOT_TAGGED_57 input {
   display: none !important;
 }
 
-.en__field--NOT_TAGGED_5 label {
+.en__field--NOT_TAGGED_5 label, .en__field--NOT_TAGGED_56 label, .en__field--NOT_TAGGED_57 label {
   margin-left: 0 !important;
   margin-right: 0 !important;
   padding-top: 10px !important;
@@ -26,10 +23,8 @@
   line-height: 2.3em !important;
 }
 
-.en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label {
+.en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label,
+.en__field--NOT_TAGGED_56 label:hover, .en__field--NOT_TAGGED_56 input:checked ~ label, .en__field--NOT_TAGGED_56 input:hover ~ label,
+.en__field--NOT_TAGGED_57 label:hover, .en__field--NOT_TAGGED_57 input:checked ~ label, .en__field--NOT_TAGGED_57 input:hover ~ label {
   background-color: #EF662F !important;
-}
-
-.en__field--NOT_TAGGED_5 input:checked, .en__field--NOT_TAGGED_5 input:hover, .en__field--NOT_TAGGED_5 label:hover ~ input {
-  
 }
