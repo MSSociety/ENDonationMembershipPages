@@ -14,7 +14,7 @@ select, .en__field__input--select {
     margin-left: 0;
 }
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox]:not(.pbo__input__checkbox), input[type=radio]:not(.pbo__input__checkbox) {
   -webkit-appearance: initial;
   appearance: initial;
   position: relative;
@@ -28,7 +28,7 @@ input[type=checkbox], input[type=radio] {
   width: 20px;
 }
 
-input[type=checkbox]:checked:after, input[type=radio]:checked:after {
+input[type=checkbox]:not(.pbo__input__checkbox):checked:after, input[type=radio]:not(.pbo__input__checkbox):checked:after {
   content: "✓";
   color: #EF662F;
   font-family: 'SSStandard';
