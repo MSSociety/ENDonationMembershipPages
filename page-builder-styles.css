@@ -52,6 +52,10 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
   font-size: 16px;
 }
 
+.en__field--checkbox label {
+  display: inline;
+}
+
 .en__submit button {
     -webkit-appearance: button;
     cursor: pointer;
