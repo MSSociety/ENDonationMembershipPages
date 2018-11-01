@@ -139,7 +139,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__field--NOT_TAGGED_10 label {
     display: inline-block;
     float: left;
-    width: 100%;
+    width: 100% !important;
     background: #FFF;
     border: 1px solid #4A4A4A;
     border-radius: 5px;
