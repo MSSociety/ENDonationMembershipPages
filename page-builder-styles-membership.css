@@ -26,7 +26,7 @@
 }
 
 .en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label {
-  
+  background-color: #EF662F !important;
 }
 
 .en__field--NOT_TAGGED_5 input:checked, .en__field--NOT_TAGGED_5 input:hover, .en__field--NOT_TAGGED_5 label:hover ~ input {
