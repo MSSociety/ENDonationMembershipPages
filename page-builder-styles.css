@@ -28,9 +28,14 @@ input[type=checkbox]:not(.pbo__input__checkbox), input[type=radio]:not(.pbo__inp
   width: 20px;
 }
 
-.EN__RootElement input[type=radio] {
+#EN__RootElement input[type=radio] {
   -webkit-appearance: radio;
   appearance: radio;
+}
+
+#EN__RootElement input[type=checkbox] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
 }
 
 input[type=checkbox]:not(.pbo__input__checkbox):checked:after, input[type=radio]:not(.pbo__input__checkbox):checked:after {
