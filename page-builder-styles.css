@@ -68,6 +68,10 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     background-position: 90% center;
 }
 
+.en__field__label {
+  width: auto !important;
+}
+
 .en__mandatory label::after {
     content: ' *';
 }
