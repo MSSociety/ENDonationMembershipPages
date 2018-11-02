@@ -180,6 +180,12 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 400px) {
+  .en__field--NOT_TAGGED_10 .en__field__item {
+    width: 45%;
+  }
+}
+
 .en__field--NOT_TAGGED_10 label {
     display: inline-block;
     float: left;
