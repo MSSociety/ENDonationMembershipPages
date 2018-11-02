@@ -23,6 +23,13 @@
   line-height: 2.3em !important;
 }
 
+@media screen and (max-width: 400px) {
+  .en__field--NOT_TAGGED_5 label, .en__field--NOT_TAGGED_56 label, .en__field--NOT_TAGGED_57 label {
+    line-height: 1.3em !important;
+    min-height: 70px;
+  }
+}
+
 .en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label,
 .en__field--NOT_TAGGED_56 label:hover, .en__field--NOT_TAGGED_56 input:checked ~ label, .en__field--NOT_TAGGED_56 input:hover ~ label,
 .en__field--NOT_TAGGED_57 label:hover, .en__field--NOT_TAGGED_57 input:checked ~ label, .en__field--NOT_TAGGED_57 input:hover ~ label {
