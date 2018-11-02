@@ -329,7 +329,19 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     width: 30%;
 }
 
+@media screen and (max-width: 400px) {
+  .en__field--ccvv {
+    width: 40%;
+  }
+}
+
 .en__field--ccexpire {
     display: inline-block;
     width: 40%;
+}
+
+@media screen and (max-width: 400px) {
+  .en__field--ccexpire {
+    width: 50%;
+  }
 }
