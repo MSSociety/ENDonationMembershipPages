@@ -256,6 +256,12 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     width: 74%;
 }
 
+@media screen and (max-width: 520px) {
+  .en__field--firstName {
+    width: 100%;
+  }
+}
+
 .en__field--postcode {
     background-color: #d0d0d0;
     border-radius: 8px;
