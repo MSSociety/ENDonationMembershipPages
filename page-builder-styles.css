@@ -42,6 +42,13 @@ select, .en__field__input--select {
     border: 1px solid #4A4A4A;
     border-radius: 5px;
     margin-left: 0;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 350px) {
+  select, .en__field__input--select {
+    max-width: 300px;
+  }
 }
 
 input[type=checkbox]:not(.pbo__input__checkbox), input[type=radio]:not(.pbo__input__checkbox) {
@@ -150,7 +157,6 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
   -ms-user-select: none;
   user-select: none;
 }
-
 
 .en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label,
 .en__field--NOT_TAGGED_56 label:hover, .en__field--NOT_TAGGED_56 input:checked ~ label, .en__field--NOT_TAGGED_56 input:hover ~ label,
