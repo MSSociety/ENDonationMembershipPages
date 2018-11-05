@@ -4,6 +4,29 @@
   background-repeat: no-repeat;
 }
 
+.wrapper form {
+    margin: -20px auto 60px;
+}
+
+@media screen and (min-width: 300px) {
+  .wrapper form {
+      margin: -90px auto 60px;
+  }
+}
+
+/* @media screen and (min-width: 460px) {
+  .wrapper form {
+      margin: -90px auto 60px;
+  }
+} */
+
+@media screen and (min-width: 680px) {
+  .wrapper form {
+      margin: -180px auto 60px;
+      width: 75%;
+  }
+}
+
 .en__field__element, .en__field__element--text, .en__field__input--calendar, .en__field__input--email,
  .en__field__input--number, .en__field__input--password, .en__field__input--telephone, .en__field__input--text,
   .en__field__input--textarea, .en__field__element--radio {
