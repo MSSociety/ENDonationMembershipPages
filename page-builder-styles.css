@@ -14,16 +14,9 @@
   }
 }
 
-/* @media screen and (min-width: 460px) {
-  .wrapper form {
-      margin: -90px auto 60px;
-  }
-} */
-
 @media screen and (min-width: 680px) {
   .wrapper form {
       margin: -180px auto 60px;
-      width: 75%;
   }
 }
 
@@ -31,6 +24,10 @@
  .en__field__input--number, .en__field__input--password, .en__field__input--telephone, .en__field__input--text,
   .en__field__input--textarea, .en__field__element--radio {
     width: 100% !important;
+}
+
+.en__field {
+    padding-bottom: 6px !important;
 }
 
 select, .en__field__input--select {
@@ -201,7 +198,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     border-radius: 5px;
     font-size: 34px !important;
     text-align: center;
-    padding: 18px 12px;
+    padding: 10px 30px;
     -webkit-transition: all .25s ease;
     transition: all .25s ease;
 }
