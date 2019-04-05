@@ -1,0 +1,419 @@
+/* Hide certain styles from showing in Page Builder */
+#en__pagebuilder form {
+  display: block;
+}
+
+#page-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form {
+  background: transparent !important;
+  border-radius: 0 !important;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 800px;
+  padding: 0 0 !important;
+  width: 100%;
+}
+
+/* Header */
+.en__component--row:nth-child(1) {
+  
+}
+
+#top-menu {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+#top-menu-logo img {
+  max-height: 110px;
+}
+
+#top-menu-links {
+  display: flex;
+  flex-grow: 1;
+  font-size: 18px;
+  justify-content: flex-end;
+  margin-left: 50px;
+}
+
+.top-menu-link {
+  margin-right: 30px;
+}
+
+.top-menu-link a, .top-menu-link a:hover, .top-menu-link a:focus, .top-menu-link a:visited {
+  text-decoration: none;
+}
+
+.top-menu-link a, .top-menu-link a:focus, .top-menu-link a:visited {
+  color: #4A4A4A;
+}
+
+.top-menu-link a:hover {
+  color: #EF662F;
+}
+
+#top-menu-social {
+  display: flex;
+}
+
+.top-menu-social {
+  margin-left: 15px;
+}
+
+.top-menu-social img {
+  height: 40px;
+}
+
+/* Form fields and submit button */
+.en__component--row:nth-child(2) {
+  background: #E8E8E8;
+  border-radius: 7px;
+  max-width: 400px;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.en__component--row:nth-child(2):after {
+  content: url('https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/MS_payment-methods_new.png?v=1484651775000');
+}
+
+.en__field__element, .en__field__element--text, .en__field__input--calendar, .en__field__input--email,
+ .en__field__input--number, .en__field__input--password, .en__field__input--telephone, .en__field__input--text,
+  .en__field__input--textarea, .en__field__element--radio {
+    width: 100% !important;
+}
+
+.en__field {
+    padding-bottom: 6px !important;
+}
+
+select, .en__field__input--select {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 15px 5px 15px 15px !important;
+    background: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    margin-left: 0;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 350px) {
+  select, .en__field__input--select {
+    max-width: 300px;
+  }
+}
+
+input[type=checkbox]:not(.pbo__input__checkbox), input[type=radio]:not(.pbo__input__checkbox) {
+  -webkit-appearance: initial;
+  appearance: initial;
+  position: relative;
+  z-index: 100;
+  margin-right: 5px;
+  border: 1px solid rgb(74, 74, 74);
+  border-radius: 5px;
+  background: #ffffff;
+  line-height: 0.875rem;
+  height: 20px;
+  width: 20px;
+}
+
+#EN__RootElement input[type=radio] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+#EN__RootElement input[type=checkbox] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+input[type=checkbox]:not(.pbo__input__checkbox):checked:after, input[type=radio]:not(.pbo__input__checkbox):checked:after {
+  content: "✓";
+  color: #EF662F;
+  font-family: 'SSStandard';
+  font-size: 10.4px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+input[type=checkbox] ~ label, input[type=radio] ~ label {
+  font-size: 16px;
+}
+
+.en__field--checkbox label {
+  display: inline;
+}
+
+.en__submit button {
+    -webkit-appearance: button;
+    cursor: pointer;
+    background: #EF662F;
+    border: none;
+    border-radius: 7px;
+    color: #FFF;
+    transition: all .25s ease;
+    font: inherit;
+    font-size: 1.425rem;
+    margin: 0;
+    position: relative;
+    max-width: 250px;
+    text-align: center;
+    display: block;
+    padding: 15px 40px;
+    background-image: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sbmt-arrow.png?v=1471960309000);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
+
+.en__field__label {
+  width: auto !important;
+}
+
+.en__mandatory label::after {
+    content: ' *';
+}
+
+.en__field__error {
+    color: #EF662F;
+}
+
+/* Gift Type (NB this is both Monthly/One-off and First-time member/Renewing) and Subscription Type */
+
+.en__field--NOT_TAGGED_5, .en__field--NOT_TAGGED_56, .en__field--NOT_TAGGED_57 {
+  text-align: center;
+}
+
+.en__field--NOT_TAGGED_5 input, .en__field--NOT_TAGGED_56 input, .en__field--NOT_TAGGED_57 input {
+  margin-top: 6px;
+}
+
+.en__field--NOT_TAGGED_5 label, .en__field--NOT_TAGGED_56 label, .en__field--NOT_TAGGED_57 label {
+  display: inline-block;
+  position: relative;
+  margin-left: -35px;
+  margin-right: 15px;
+  padding-left: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.en__field--NOT_TAGGED_5 label:hover, .en__field--NOT_TAGGED_5 input:checked ~ label, .en__field--NOT_TAGGED_5 input:hover ~ label,
+.en__field--NOT_TAGGED_56 label:hover, .en__field--NOT_TAGGED_56 input:checked ~ label, .en__field--NOT_TAGGED_56 input:hover ~ label,
+.en__field--NOT_TAGGED_57 label:hover, .en__field--NOT_TAGGED_57 input:checked ~ label, .en__field--NOT_TAGGED_57 input:hover ~ label {
+  border-radius: 5px;
+  background: #EF662F;
+  color: #ffffff;
+}
+
+.en__field--NOT_TAGGED_5 input:checked, .en__field--NOT_TAGGED_5 input:hover, .en__field--NOT_TAGGED_5 label:hover ~ input,
+.en__field--NOT_TAGGED_56 input:checked, .en__field--NOT_TAGGED_56 input:hover, .en__field--NOT_TAGGED_56 label:hover ~ input,
+.en__field--NOT_TAGGED_57 input:checked, .en__field--NOT_TAGGED_57 input:hover, .en__field--NOT_TAGGED_57 label:hover ~ input {
+  border: 1px solid #ffffff;
+}
+
+.en__field--NOT_TAGGED_5.en__mandatory label::after, .en__field--NOT_TAGGED_56.en__mandatory label::after, .en__field--NOT_TAGGED_57.en__mandatory label::after {
+    content: '';
+}
+
+/* Donation amount */
+
+.en__field--NOT_TAGGED_10 input[type=radio] {
+    display: none;
+}
+
+.en__field--NOT_TAGGED_10 .en__field__item {
+    width: 30%;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .en__field--NOT_TAGGED_10 .en__field__item {
+    width: 45%;
+  }
+}
+
+.en__field--NOT_TAGGED_10 label {
+    display: inline-block;
+    float: left;
+    width: 100% !important;
+    background: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    font-size: 34px !important;
+    text-align: center;
+    padding: 10px 30px;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.en__field--NOT_TAGGED_10 label:hover, .en__field--NOT_TAGGED_10 input[type=radio]:checked ~ label {
+    background-color: #EF662F;
+    color: #FFF;
+    border: 1px solid #EF662F;
+}
+
+.en__field--NOT_TAGGED_10 input[type=text] {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #4A4A4A;
+    border-radius: 5px;
+    font-size: 34px !important;
+    text-align: left;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 28px;
+    padding-right: 12px;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    background-image: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sterling-symbol.png?v=1471621584000);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+.en__field--NOT_TAGGED_10 label {
+    display: none;
+}
+.en__field--NOT_TAGGED_10 label.en__field__label--item {
+    display: block;
+}
+
+.en__field--NOT_TAGGED_10.en__mandatory label::after {
+    content: '';
+}
+
+/* Sort code */
+.en__field--NOT_TAGGED_9 .en__field__input--text {
+    width: 250px !important;
+}
+
+.en__field--title {
+    display: inline-block;
+    width: 25%;
+}
+
+.en__field--title .en__field__input--select {
+    min-width: 50px;
+}
+
+.en__field--firstName {
+    display: inline-block;
+    width: 74%;
+}
+
+@media screen and (max-width: 520px) {
+  .en__field--firstName {
+    width: 100%;
+  }
+}
+
+.en__field--postcode {
+    background-color: #d0d0d0;
+    border-radius: 8px;
+    padding: 10px 5px 5px 10px;
+    max-width: 270px;
+    margin-bottom: 20px;
+}
+
+.en__field--postcode .en__field__input--text {
+    width: 250px !important;
+}
+
+/* Gift aid declaration */
+
+.en__field--gift-aid-declaration {
+    background-color: white;
+    padding: 15px;
+}
+
+.en__field--gift-aid-declaration label {
+    width: 100%;
+    font-weight: bold;
+    background-image: url(https://www.e-activist.com/ea-campaign/action.retrievefile.do?ea_fileid=13349);
+    background-size: 63px 29px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 68px;
+}
+
+.en__field--gift-aid-declaration label::before {
+    content: "Just tick, ";
+    color: #ff6600;
+}
+
+.en__field--gift-aid-declaration div label {
+    display: inline;
+    line-height: 1.3;
+    font-size: .9em;
+    font-weight: normal;
+    background-image: none;
+    padding-left: 0;
+}
+
+.en__field--gift-aid-declaration div label::before {
+    content: none;
+}
+
+/* Marketing permissions */
+
+.en__field--NOT_TAGGED_58, .en__field--NOT_TAGGED_59, .en__field--NOT_TAGGED_60, .en__field--NOT_TAGGED_61 {
+    display: block;
+    background-color: #d4d4d4;
+    border-radius: 2px;
+    padding: 8px 15px;
+    padding-bottom: 8px !important;
+    margin-bottom: 15px;
+}
+
+.en__field--NOT_TAGGED_58.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_59.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_60.en__mandatory .en__field__item label::after, .en__field--NOT_TAGGED_61.en__mandatory .en__field__item label::after {
+    content: '';
+}
+
+.en__field--ccvv {
+    display: inline-block;
+    width: 30%;
+}
+
+@media screen and (max-width: 400px) {
+  .en__field--ccvv {
+    width: 40%;_
+  }
+}
+
+.en__field--ccexpire {
+    display: inline-block;
+    width: 40%;
+}
+
+@media screen and (max-width: 400px) {
+  .en__field--ccexpire {
+    width: 50%;
+  }
+}
