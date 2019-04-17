@@ -106,6 +106,18 @@ form {
   max-width: 550px;
 }
 
+.floating-content {
+  position: absolute;
+  right: 0;
+  top: 500px;
+  background-color: #f5f5f5;
+  border-radius: 7px;
+  border-top-left-radius: 25px;
+  padding: 40px;
+  margin-bottom: 40px;
+  width: 450px;
+}
+
 @media screen and (max-width: 1440px) {
   .hero {
     height: 36vw;
@@ -120,6 +132,15 @@ form {
   .hero-text {
     max-width: 40vw;
   }
+  .floating-content {
+    top: 420px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .floating-content {
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -127,10 +148,13 @@ form {
     height: 42vw;
     margin-bottom: -37vw;
   }
-  
   .hero-text {
     max-width: 32vw;
     font-size: 2em;
+  }
+  .floating-content {
+    top: 350px;
+    width: 280px;
   }
 }
 
@@ -140,8 +164,10 @@ form {
     height: 42vw;
     margin-bottom: -17vw;
   }
-  
   .hero-text {
+    display: none;
+  }
+  .floating-content {
     display: none;
   }
 }
