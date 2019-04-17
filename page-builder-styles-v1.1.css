@@ -42,6 +42,7 @@ form {
 
 #top-menu-logo img {
   max-height: 110px;
+  min-width: 100px;
 }
 
 #top-menu-links {
@@ -78,6 +79,18 @@ form {
 
 .top-menu-social img {
   height: 40px;
+  width: 40px;
+  min-width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  #top-menu-links {
+    display: none;
+  }
+  
+  #top-menu-social {
+    display: none;
+  }
 }
 
 /* Hero */
@@ -651,6 +664,33 @@ form h2 {
 .footer-content-33 {
   flex-basis: 33%;
   flex-grow: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .footer-content iframe {
+    min-height: 240px;
+  }
+  .footer-content-33, .footer-content-66 {
+    flex-basis: 100%;
+  }
+  .footer-content-33:nth-child(1), .footer-content-66:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .footer-content-66:nth-child(1) {
+    padding-right: 0;
+  }
+  .footer-content-66:nth-child(2) {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .footer-content iframe {
+    min-height: 150px;
+  }
 }
 
 section.cta-strip {
