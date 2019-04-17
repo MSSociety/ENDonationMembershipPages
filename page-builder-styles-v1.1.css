@@ -182,6 +182,9 @@ form {
   }
   .floating-content {
     display: none;
+    position: static;
+    width: 94%;
+    margin: 0 10px;
   }
 }
 
