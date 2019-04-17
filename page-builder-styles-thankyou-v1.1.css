@@ -1,0 +1,13 @@
+.en__component--row:nth-last-child(2) {
+  background-color: white;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.en__component--row:nth-last-child(2) .en__component--column {
+  max-width: 600px;
+}
+
+.en__component--row:nth-last-child(2):after {
+  content: none;
+}

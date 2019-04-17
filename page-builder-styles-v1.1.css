@@ -586,6 +586,23 @@ form h2 {
   
 }
 
+.share-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+  margin-right: 20px;
+}
+
+.share-button-facebook {
+  background-color: #4267b2;
+}
+
+.share-button-twitter {
+  background-color: #38A1F3;
+}
+
 /* Footer */
 .en__component--row:last-child {
   margin-top: 3vw;
