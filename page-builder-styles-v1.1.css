@@ -84,6 +84,10 @@ form {
 }
 
 @media screen and (max-width: 768px) {
+  #top-menu {
+    padding: 0 10px;
+  }
+  
   #top-menu-links {
     display: none;
   }
@@ -218,10 +222,11 @@ form {
 }
 
 .en__component--row:nth-last-child(2):after {
-  content: url('https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/MS_payment-methods_new.png?v=1484651775000');
-  margin-top: 12px;
-  transform: scale(.8);
-  transform-origin: left top;
+  content: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/MS_payment-methods_new-280.png?v=1555542224000);
+}
+
+.en__component--row:nth-last-child(2) .en__component--column {
+  padding-bottom: 15px;
 }
 
 .form-header {
