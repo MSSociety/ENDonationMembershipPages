@@ -25,6 +25,11 @@ form {
   }
 }
 
+/* Code blocks */
+.en__component--row:nth-last-child(5) {
+  display: none;
+}
+
 /* Header */
 @media screen and (max-width: 1200px) {
   .en__component--row:nth-last-child(4) {
@@ -43,6 +48,12 @@ form {
 #top-menu-logo img {
   max-height: 110px;
   min-width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  #top-menu-logo img {
+    max-height: 90px;
+  }
 }
 
 #top-menu-links {
@@ -126,7 +137,7 @@ form {
 .floating-content {
   position: absolute;
   right: 0;
-  top: 500px;
+  top: 480px;
   background-color: #f5f5f5;
   border-radius: 7px;
   border-top-left-radius: 25px;
@@ -194,7 +205,11 @@ form {
 
 @media screen and (max-width: 576px) {
   .hero {
-    margin-bottom: -36vw;
+    margin-bottom: -28vw;
+    min-height: 72vw;
+    height: 72vw;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -255,13 +270,20 @@ form {
 select, .en__field__input--select {
     font-family: inherit;
     font-size: inherit;
-    padding: 15px 5px 15px 15px !important;
+    height: 48px;
+    padding: 12px 25px 15px 15px !important;
     background: #FFF;
     border: 1px solid #4A4A4A;
     border-radius: 5px;
     margin-left: 0;
     width: 100%;
     max-width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==);
+    background-position : right center;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 350px) {
@@ -274,7 +296,8 @@ input[type=number], input[type=text], input[type=tel] {
   background: #FFF;
   border: 1px solid #4A4A4A;
   border-radius: 5px;
-  padding: 15px;
+  padding: 12px 15px 15px 15px;
+  line-height: 19px;
   position: relative;
 }
 
@@ -512,7 +535,8 @@ form h2 {
 
 .en__field--title {
     display: inline-block;
-    width: 25%;
+    width: 35%;
+    padding-right: 10px;
 }
 
 .en__field--title .en__field__input--select {
@@ -521,7 +545,7 @@ form h2 {
 
 .en__field--firstName {
     display: inline-block;
-    width: 74%;
+    width: 64%;
 }
 
 .en__field--postcode {
@@ -605,7 +629,11 @@ form h2 {
 
 .en__field--ccvv {
     display: inline-block;
-    width: 30%;
+    width: 40%;
+}
+
+.en__field--ccvv label {
+    padding-bottom: 12px;
 }
 
 @media screen and (max-width: 400px) {
@@ -616,7 +644,7 @@ form h2 {
 
 .en__field--ccexpire {
     display: inline-block;
-    width: 40%;
+    width: 45%;
 }
 
 @media screen and (max-width: 400px) {
@@ -630,6 +658,7 @@ form h2 {
 }
 
 .share-button {
+  text-align: center;
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -644,6 +673,14 @@ form h2 {
 
 .share-button-twitter {
   background-color: #38A1F3;
+}
+
+@media screen and (max-width: 768px) {
+  .share-button {
+    display: block;
+    margin-top: 20px;
+    width: 200px;
+  }
 }
 
 /* Footer */
@@ -720,6 +757,35 @@ form h2 {
 @media screen and (max-width: 512px) {
   .footer-content iframe {
     min-height: 150px;
+  }
+}
+
+#back-to-top {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #back-to-top {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #e9580c;
+    margin-top: 20px;
+    padding: 20px 0;
+    padding-right: 30px;
+  }
+  
+  #back-to-top, #back-to-top a, #back-to-top a:hover, #back-to-top a:focus, #back-to-top a:visited {
+    color: white;
+    font-size: 20px;
+  }
+  
+  #back-to-top a, #back-to-top a:hover, #back-to-top a:focus, #back-to-top a:visited {
+    text-decoration: underline;
+  }
+  
+  #back-to-top a {
+    margin-right: 10px;
   }
 }
 
