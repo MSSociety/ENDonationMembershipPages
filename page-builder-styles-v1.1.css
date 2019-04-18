@@ -188,7 +188,7 @@ form {
     display: none;
     position: static;
     width: 94%;
-    margin: 0 10px;
+    margin: 20px 10px 0;
   }
 }
 
@@ -216,6 +216,7 @@ form {
 
 @media screen and (max-width: 768px) {
   .en__component--row:nth-last-child(2) {
+    padding: 5px 15px 5px 15px;
     max-width: 90vw;
     width: 90vw;
   }
@@ -230,11 +231,15 @@ form {
 }
 
 .form-header {
-  padding: 15px;
+  padding: 25px 0 0;
 }
 
 .form-header h1 {
   font-weight: normal;
+}
+
+.subtitle {
+  padding: 25px 0 0;
 }
 
 .en__field__element, .en__field__element--text, .en__field__input--calendar, .en__field__input--email,
@@ -255,6 +260,7 @@ select, .en__field__input--select {
     border: 1px solid #4A4A4A;
     border-radius: 5px;
     margin-left: 0;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -262,6 +268,14 @@ select, .en__field__input--select {
   select, .en__field__input--select {
     max-width: 300px;
   }
+}
+
+input[type=number], input[type=text], input[type=tel] {
+  background: #FFF;
+  border: 1px solid #4A4A4A;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
 }
 
 input[type=checkbox]:not(.pbo__input__checkbox), input[type=radio]:not(.pbo__input__checkbox) {
@@ -325,7 +339,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
     transition: all .25s ease;
     font: inherit;
     font-size: 1.425rem;
-    margin: 0;
+    margin: 10px 0;
     position: relative;
     max-width: 250px;
     text-align: center;
@@ -510,14 +524,22 @@ form h2 {
     width: 74%;
 }
 
+.en__field--postcode {
+    max-width: 270px;
+}
+
 @media screen and (max-width: 520px) {
+  .en__field--title .en__field__input--select {
+    min-width: 150px;
+  }
+  
   .en__field--firstName {
     width: 100%;
   }
-}
-
-.en__field--postcode {
-    max-width: 270px;
+  
+  .en__field--postcode {
+    max-width: 100%;
+  }
 }
 
 /* Gift aid declaration */
