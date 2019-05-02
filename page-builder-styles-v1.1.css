@@ -236,6 +236,10 @@ form {
   width: 100%;
 }
 
+#en__pagebuilder .en__component--row:nth-last-child(3) {
+  margin-top: 200px;
+}
+
 @media screen and (max-width: 900px) {
   .en__component--row:nth-last-child(2) {
     max-width: 430px;
