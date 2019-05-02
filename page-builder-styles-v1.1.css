@@ -1,10 +1,16 @@
-#page-wrapper {
+/* PageBuilder editor */
+#en__pagebuilder {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
+#page-wrapper {
+  width: 100%;
+}
+
+/* Form */
 form {
   background: transparent !important;
   border-radius: 0 !important;
@@ -32,10 +38,14 @@ form {
 
 /* Header */
 @media screen and (max-width: 1200px) {
-  .en__component--row:nth-last-child(4) {
+  .en__component--row:nth-last-child(4), #en__pagebuilder .en__component--row:nth-last-child(5) {
     margin-left: 2vw;
     margin-right: 2vw;
   }
+}
+
+#en__pagebuilder .en__component--row:nth-last-child(5) {
+  display: block;
 }
 
 #top-menu {
@@ -217,7 +227,7 @@ form {
 }
 
 /* Form fields and submit button */
-.en__component--row:nth-last-child(2) {
+.en__component--row:nth-last-child(2), #en__pagebuilder .en__component--row:nth-last-child(3) {
   background: #E8E8E8;
   border-radius: 7px;
   margin-left: 4vw;
@@ -240,8 +250,12 @@ form {
   }
 }
 
-.en__component--row:nth-last-child(2):after {
+.en__component--row:nth-last-child(2):after, #en__pagebuilder .en__component--row:nth-last-child(3):after {
   content: url(https://mssociety.github.io/ENDonationMembershipPages/images/payment-methods-fundraising-regulator.png);
+}
+
+#en__pagebuilder .en__component--row:nth-last-child(2):after {
+  content: none;
 }
 
 .en__component--row:nth-last-child(2) .en__component--column {
@@ -692,8 +706,12 @@ form h2 {
 }
 
 /* Footer */
-.en__component--row:last-child {
+.en__component--row:last-child, #en__pagebuilder .en__component--row:nth-last-child(2) {
   margin-top: 3vw;
+}
+
+#en__pagebuilder .en__component--row:nth-last-child(2) {
+    min-width: 95%;
 }
 
 @media screen and (max-width: 1200px) {
