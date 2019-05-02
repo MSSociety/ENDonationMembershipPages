@@ -556,6 +556,10 @@ form h2 {
     max-width: 270px;
 }
 
+.en__field--postcode label div {
+  top: 36px !important;
+}
+
 @media screen and (max-width: 520px) {
   .en__field--title .en__field__input--select {
     min-width: 150px;
