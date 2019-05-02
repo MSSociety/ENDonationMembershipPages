@@ -686,7 +686,6 @@ form h2 {
 /* Footer */
 .en__component--row:last-child {
   margin-top: 3vw;
-  max-width: 1000px;
 }
 
 @media screen and (max-width: 1200px) {
