@@ -143,7 +143,7 @@ form {
   border-top-left-radius: 25px;
   padding: 40px;
   margin-bottom: 40px;
-  width: 450px;
+  width: 600px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -153,6 +153,9 @@ form {
   }
   .hero-text {
     max-width: 450px;
+  }
+  .floating-content {
+    width: 450px;
   }
 }
 
