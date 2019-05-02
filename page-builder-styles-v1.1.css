@@ -61,12 +61,29 @@ form {
   }
 }
 
+:focus {
+  outline: none !important;
+}
+
 #top-menu-links {
   display: flex;
+  flex-direction: row;
   flex-grow: 1;
   font-size: 18px;
   justify-content: flex-end;
   margin-left: 50px;
+}
+
+#top-menu-hamburger {
+  display: none;
+}
+
+.hamburger:hover, .hamburger.is-active:hover {
+  opacity: 1 !important;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: #EF662F !important;
 }
 
 .top-menu-link {
@@ -106,6 +123,29 @@ form {
   
   #top-menu-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 0;
+    top: -20px;
+    z-index: 1000;
+    right: -10px;
+    padding: 115px 29px 0;
+    background-color: #E8E8E8;
+  }
+  
+  #top-menu-hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 1001;
+  }
+  
+  .hide-mobile {
+    display: none;
+  }
+  
+  .top-menu-link {
+    margin-bottom: 20px;
   }
   
   #top-menu-social {
