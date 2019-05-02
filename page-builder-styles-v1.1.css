@@ -1,12 +1,7 @@
-/* PageBuilder editor */
-#en__pagebuilder {
+#page-wrapper {
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-#page-wrapper {
   width: 100%;
 }
 
