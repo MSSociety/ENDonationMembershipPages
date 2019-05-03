@@ -191,6 +191,10 @@ form {
   width: 600px;
 }
 
+#en__pagebuilder .floating-content {
+  position: static;
+}
+
 @media screen and (max-width: 1440px) {
   .hero {
     height: 36vw;
