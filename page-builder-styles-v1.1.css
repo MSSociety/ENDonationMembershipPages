@@ -297,6 +297,12 @@ form {
   content: url(https://mssociety.github.io/ENDonationMembershipPages/images/payment-methods-fundraising-regulator.png);
 }
 
+@media screen and (max-width: 768px) {
+  .en__component--row:nth-last-child(2):after, #en__pagebuilder .en__component--row:nth-last-child(3):after {
+    zoom: 0.8;
+  }
+}
+
 #en__pagebuilder .en__component--row:nth-last-child(2):after {
   content: none;
 }
