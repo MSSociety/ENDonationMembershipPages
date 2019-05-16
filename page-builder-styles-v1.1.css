@@ -829,32 +829,27 @@ form h2 {
 }
 
 #back-to-top {
-  display: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #e9580c;
+  margin-top: 20px;
+  padding: 20px 0 10px;
+  padding-right: 30px;
+  line-height: 30px;
 }
 
-@media screen and (max-width: 768px) {
-  #back-to-top {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    background-color: #e9580c;
-    margin-top: 20px;
-    padding: 20px 0;
-    padding-right: 30px;
-  }
-  
-  #back-to-top, #back-to-top a, #back-to-top a:hover, #back-to-top a:focus, #back-to-top a:visited {
-    color: white;
-    font-size: 20px;
-  }
-  
-  #back-to-top a, #back-to-top a:hover, #back-to-top a:focus, #back-to-top a:visited {
-    text-decoration: underline;
-  }
-  
-  #back-to-top a {
-    margin-right: 10px;
-  }
+#back-to-top, #back-to-top a, #back-to-top a:hover, #back-to-top a:focus, #back-to-top a:visited {
+  color: white;
+  font-size: 20px;
+}
+
+#back-to-top a, #back-to-top a:hover, #back-to-top a:focus, #back-to-top a:visited {
+  text-decoration: underline;
+}
+
+#back-to-top a {
+  margin-right: 10px;
 }
 
 section.cta-strip {
