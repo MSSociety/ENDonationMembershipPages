@@ -807,6 +807,23 @@ form h2 {
   flex-grow: 1;
 }
 
+.footer-content-50 {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+.footer-content-50:nth-child(1) {
+  padding-right: 30px;
+}
+
+.footer-content-50:nth-child(2) {
+  padding-left: 30px;
+}
+
+.footer-content-video {
+  min-height: 19vw;
+}
+
 @media screen and (max-width: 768px) {
   .footer-content {
     flex-wrap: wrap;
@@ -814,16 +831,16 @@ form h2 {
   .footer-content iframe {
     min-height: 240px;
   }
-  .footer-content-33, .footer-content-66 {
+  .footer-content-33, .footer-content-66, .footer-content-50 {
     flex-basis: 100%;
   }
-  .footer-content-33:nth-child(1), .footer-content-66:nth-child(1) {
+  .footer-content-33:nth-child(1), .footer-content-66:nth-child(1), .footer-content-50:nth-child(1) {
     margin-bottom: 20px;
   }
-  .footer-content-66:nth-child(1) {
+  .footer-content-66:nth-child(1), .footer-content-50:nth-child(1) {
     padding-right: 0;
   }
-  .footer-content-66:nth-child(2) {
+  .footer-content-66:nth-child(2), .footer-content-50:nth-child(2) {
     padding-left: 0;
   }
 }
