@@ -294,7 +294,9 @@ form {
 }
 
 .en__component--row:nth-last-child(2):after, #en__pagebuilder .en__component--row:nth-last-child(3):after {
-  content: url(https://mssociety.github.io/ENDonationMembershipPages/images/payment-methods-fundraising-regulator.png);
+  content: url(https://mssociety.github.io/ENDonationMembershipPages/images/payment-methods-fundraising-regulator-new.png);
+  margin-bottom: 15px;
+  zoom: 0.8;
 }
 
 @media screen and (max-width: 768px) {
