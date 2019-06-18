@@ -668,14 +668,14 @@ form h2 {
 
 .en__field--gift-aid-declaration div label::after {
     color: #4A4A4A;  
-    content: 'Yes, I would like to GiftAid \A        my donations.';
+    content: 'Yes, I would like to Gift Aid \A        my donations.';
     font-size: 21px;
     letter-spacing: normal;
     white-space: pre;
 }
 
 .en__field--gift-aid-declaration .en__field__item::after {
-    content: 'I want the MS Society to claim GiftAid on donations I have made in the past four years, today, and on all future donations. \A\A I am a UK tax payer and understand that if I pay less Income Tax and/or Capital Gains Tax than the amount of GiftAid claimed on all of my donations in that tax year it is my responsibility to pay any difference.';
+    content: 'I want the MS Society to claim Gift Aid on donations I have made in the past four years, today, and on all future donations. \A\A I am a UK tax payer and understand that if I pay less Income Tax and/or Capital Gains Tax than the amount of Gift Aid claimed on all of my donations in that tax year it is my responsibility to pay any difference.';
     display: block;
     white-space: pre-line;
     margin: 20px 0;
