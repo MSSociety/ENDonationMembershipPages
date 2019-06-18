@@ -653,7 +653,7 @@ form h2 {
 .en__field--gift-aid-declaration div label {
     color: transparent;
     display: inline;
-    font-size: 1px;
+    font-size: 0;
     letter-spacing: -1px;
     line-height: 1.3;
     font-weight: normal;
