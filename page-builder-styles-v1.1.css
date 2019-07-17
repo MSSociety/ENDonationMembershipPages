@@ -514,7 +514,7 @@ form h2 {
 .en__field--NOT_TAGGED_56 label:hover, .en__field--NOT_TAGGED_56 input:checked ~ label, .en__field--NOT_TAGGED_56 input:hover ~ label,
 .en__field--NOT_TAGGED_57 label:hover, .en__field--NOT_TAGGED_57 input:checked ~ label, .en__field--NOT_TAGGED_57 input:hover ~ label {
   border-radius: 5px;
-  background: #EF662F;
+  background: #D14900;
   color: #ffffff;
 }
 
