@@ -83,7 +83,7 @@ form {
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  background-color: #EF662F !important;
+  background-color: #D14900 !important;
 }
 
 .top-menu-link {
@@ -396,7 +396,7 @@ input[type=checkbox]:not(.pbo__input__checkbox), input[type=radio]:not(.pbo__inp
 
 input[type=checkbox]:not(.pbo__input__checkbox):checked:after, input[type=radio]:not(.pbo__input__checkbox):checked:after {
   content: "✓";
-  color: #EF662F;
+  color: #D14900;
   font-family: 'SSStandard';
   font-size: 10.4px;
   font-weight: bold;
