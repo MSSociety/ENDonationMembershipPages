@@ -99,7 +99,7 @@ form {
 }
 
 .top-menu-link a:hover {
-  color: #EF662F;
+  color: #d14900;
 }
 
 #top-menu-social {
@@ -424,7 +424,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__submit button {
     -webkit-appearance: button;
     cursor: pointer;
-    background: #EF662F;
+    background: #d14900;
     border: none;
     border-radius: 7px;
     color: #FFF;
@@ -472,7 +472,7 @@ form h2 {
 }
 
 .text-orange, .text-orange a, .text-orange a:focus, .text-orange a:hover, .text-orange a:visited {
-  color: #e9580c;
+  color: #d14900;
 }
 
 .text-purple, .text-purple a, .text-purple a:focus, .text-purple a:hover, .text-purple a:visited {
@@ -560,9 +560,9 @@ form h2 {
 }
 
 .en__field--NOT_TAGGED_10 label:hover, .en__field--NOT_TAGGED_10 input[type=radio]:checked ~ label {
-    background-color: #EF662F;
+    background-color: #d14900;
     color: #FFF;
-    border: 1px solid #EF662F;
+    border: 1px solid #d14900;
 }
 
 .en__field--NOT_TAGGED_10 input[type=text] {
