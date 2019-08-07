@@ -1,1 +1,1 @@
-# mssociety-page-builder
+# MS Society Engaging Networks page builder scripts and styles
