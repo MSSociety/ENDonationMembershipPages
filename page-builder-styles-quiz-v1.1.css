@@ -1,0 +1,66 @@
+.en__component--row:nth-last-child(2) {
+  background-color: white;
+  margin-left: 0;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.en__component--row:nth-last-child(2):after {
+  content: none;
+}
+
+.en__component--row:nth-last-child(2) .en__component--column {
+  max-width: 100%;
+}
+
+.hero {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  padding: 40px 80px;
+}
+
+.hero-text {
+  max-width: 100%;
+  text-align: left;
+  width: 100%;
+}
+
+.hero-text-subtitle {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    padding: 40px;
+  }
+  .hero-text {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero-text {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-text {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .hero-text {
+    max-width: 100%;
+    width: 100%;
+  }
+}
