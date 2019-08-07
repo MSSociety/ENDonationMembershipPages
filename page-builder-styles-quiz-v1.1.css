@@ -32,6 +32,37 @@
   margin-top: 15px;
 }
 
+.quiz-answer-input {
+  
+}
+
+.quiz-answer-input:checked, .quiz-answer-input:hover, .quiz-answer-label:hover ~ input {
+  border: 1px solid #ffffff !important;
+}
+
+.quiz-answer-label {
+  display: inline-block;
+  position: relative;
+  margin-left: -35px;
+  margin-right: 15px;
+  padding-left: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.quiz-answer-label:hover, .quiz-answer-input:checked ~ label, .quiz-answer-input:hover ~ label {
+  border-radius: 5px;
+  background: #D14900;
+  color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     background-size: cover;
