@@ -2,6 +2,7 @@
   background-color: white;
   margin-left: 0;
   max-width: 100%;
+  padding-right: 0;
   justify-content: center;
 }
 
@@ -31,36 +32,83 @@
   font-size: 20px;
   margin-top: 15px;
 }
-
-.quiz-answer-input {
+input.quiz-answer-input {
   
 }
 
-.quiz-answer-input:checked, .quiz-answer-input:hover, .quiz-answer-label:hover ~ input {
+input.quiz-answer-input:checked, input.quiz-answer-input:hover, label.quiz-answer-label:hover ~ input {
   border: 1px solid #ffffff !important;
 }
 
-.quiz-answer-label {
+label.quiz-answer-label {
   display: inline-block;
+  font-size: 1.425rem !important;
   position: relative;
+  margin-bottom: 5px;
   margin-left: -35px;
-  margin-right: 15px;
+  max-width: 100%;
   padding-left: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-right: 15px;
-  margin-bottom: 5px;
-  font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.quiz-answer-label:hover, .quiz-answer-input:checked ~ label, .quiz-answer-input:hover ~ label {
+label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.quiz-answer-input:hover ~ label {
   border-radius: 5px;
   background: #D14900;
   color: #ffffff;
+}
+
+.quiz-col-left {
+  flex-basis: 37%;
+  margin-right: 40px;
+}
+
+.quiz-col-right {
+  flex-basis: 63%;
+}
+
+.quiz-explanation {
+  color: #EF662F;
+  font-size: 1.425rem;
+}
+
+.quiz-question {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-question-next {
+  background-color: #d14900;
+  border-radius: 7px;
+  color: white;
+  display: flex;
+  font-size: 1.425rem;
+  justify-content: center;
+  line-height: 30px;
+  margin: 20px 0 80px;
+  max-width: 150px;
+  padding: 10px 20px;
+}
+
+.quiz-question-number {
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.quiz-question-text {
+  font-size: 1.425rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.quiz-row {
+  display: flex;
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -68,10 +116,19 @@
     background-size: cover;
     padding: 40px;
   }
+
   .hero-text {
     display: block;
     max-width: 100%;
     width: 100%;
+  }
+
+  .quiz-col-left {
+    margin-right: 0;
+  }
+
+  .quiz-row {
+    flex-direction: column;
   }
 }
 
