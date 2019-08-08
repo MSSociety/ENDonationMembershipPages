@@ -10,7 +10,7 @@
 
 .en__component--row:nth-last-child(2) {
   background-color: white;
-  margin-bottom: 300px;
+  margin-bottom: 150px;
   margin-left: 0;
   max-width: 100%;
   padding-right: 0;
@@ -117,6 +117,10 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
   flex-direction: column;
 }
 
+.quiz-question, .quiz-explanation, .quiz-question-next-holder, html, body, div {
+  scroll-behavior: smooth;
+}
+
 .quiz-question-next, .quiz-question-start, .quiz-form .quiz-question-start, .quiz-question-finish {
   background-color: #d14900;
   border-radius: 7px;
@@ -138,14 +142,22 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
 }
 
 .quiz-question-number {
+  background-color: #D14900;
+  color: white;
   font-weight: normal;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.quiz-question-start, .quiz-form .quiz-question-start {
+  margin-bottom: 20px;
 }
 
 .quiz-question-text {
   font-size: 1.425rem;
   font-weight: bold;
   line-height: 2rem;
+  margin-bottom: 20px;
 }
 
 .quiz-row {
@@ -154,6 +166,11 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
 }
 
 @media screen and (max-width: 768px) {
+  .en__component--row:nth-last-child(2) {
+    padding-right: 15px;
+    width: 100%;
+  }
+
   .hero {
     background-size: cover;
     padding: 40px;
@@ -171,6 +188,17 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
 
   .quiz-col-left {
     margin-right: 0;
+  }
+
+  .quiz-form .en__field, .quiz-form h1, .quiz-form h2, .quiz-form h3, .quiz-form h4, .quiz-form h5, .quiz-form h6, .quiz-form div, .quiz-form p, .quiz-form span {
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  .quiz-question-next, .quiz-question-start, .quiz-form .quiz-question-start, .quiz-question-finish {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100% !important;
   }
 
   .quiz-row {
@@ -196,5 +224,11 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
   .hero-text {
     max-width: 100%;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .en__component--row:nth-last-child(2) {
+    margin-bottom: 300px;
   }
 }
