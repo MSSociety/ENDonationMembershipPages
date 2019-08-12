@@ -8,6 +8,10 @@
   max-width: 100%;
 }
 
+.en__component--column--2 {
+  padding: 0 15px;
+}
+
 .en__component--row:nth-last-child(2) {
   background-color: white;
   margin-bottom: 150px;
@@ -106,6 +110,10 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
   flex-direction: column;
 }
 
+.quiz-form-top {
+  margin-top: 20px;
+}
+
 .quiz-form .en__field, .quiz-form h1, .quiz-form h2, .quiz-form h3, .quiz-form h4, .quiz-form h5, .quiz-form h6, .quiz-form div, .quiz-form p, .quiz-form span {
   display: block;
   max-width: 400px;
@@ -165,7 +173,19 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
   margin: 10px 0;
 }
 
-@media screen and (max-width: 768px) {
+.quiz-top-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 250px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 849px) {
   .en__component--row:nth-last-child(2) {
     padding-right: 15px;
     width: 100%;
@@ -227,6 +247,18 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
   }
 }
 
+@media screen and (min-width: 850px) {
+  .en__component--column--2 {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .quiz-form {
+    align-items: flex-end;
+  }
+}
+  
 @media screen and (min-width: 1600px) {
   .en__component--row:nth-last-child(2) {
     margin-bottom: 300px;
