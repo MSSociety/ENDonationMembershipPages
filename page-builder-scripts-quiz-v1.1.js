@@ -27,13 +27,13 @@ function initialiseQuiz() {
       input.prop('name', inputName);
       input.prop('id', id);
       input.click(function() {
-        revealQuizAnswer(questionNumber);
+        revealQuizAnswer(questionNumber, answerIndex);
       });
 
       var label = $(this).children('label');
       label.prop('for', id);
       label.click(function() {
-        revealQuizAnswer(questionNumber);
+        revealQuizAnswer(questionNumber, answerIndex);
       });
     });
 
@@ -80,9 +80,13 @@ function nextQuizQuestion(questionNumber, nextQuestionNumber) {
   }
 }
 
-function revealQuizAnswer(questionNumber) {
-  var explanation = $('#quiz-question' + questionNumber).find('.quiz-explanation');
+function revealQuizAnswer(questionNumber, answerIndex) {
+  var explanations = $('#quiz-question' + questionNumber).find('.quiz-explanation');
+  var explanation = explanations.eq(answerIndex);
   var nextButtonHolder = $('#quiz-question' + questionNumber).find('.quiz-question-next-holder');
+
+  explanations.hide();
+  nextButtonHolder.hide();
 
   explanation.fadeIn(500, function() {
     nextButtonHolder.fadeIn(500, function() {
