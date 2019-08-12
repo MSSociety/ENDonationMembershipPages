@@ -194,7 +194,7 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-height: 250px;
+  min-height: 270px;
   padding: 20px;
 }
 
@@ -236,6 +236,10 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
 
   .quiz-row {
     flex-direction: column;
+  }
+
+  .quiz-top-image {
+    justify-content: flex-end;
   }
 }
 
