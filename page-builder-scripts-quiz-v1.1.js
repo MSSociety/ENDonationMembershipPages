@@ -16,7 +16,7 @@ function initialiseQuiz() {
     $(this).prepend('<h1 class="quiz-question-number">' + questionNumber + ' of ' + questionsTotal + '</h1>');
 
     if (questionNumber === questionsTotal && signupPosition === 'before') {
-      $(this).append('<div class="quiz-question-next-holder"><div class="quiz-question-finish" onClick="$(\'form\').submit()">Add your name</div></div>');
+      $(this).append('<div class="quiz-question-next-holder"><div class="quiz-question-finish" div class="en__submit" onClick="$(\'form\').submit()">Add your name</div></div>');
     } else {
       $(this).append('<div class="quiz-question-next-holder"><div class="quiz-question-next" onClick="nextQuizQuestion(' + questionNumber + ', ' + nextQuestionNumber + ')">Next <img src="https://MSSociety.github.io/ENDonationMembershipPages/images/arrow-down.svg" alt=""></div></div>');
     }
