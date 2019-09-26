@@ -172,8 +172,8 @@ form {
 }
 
 .hero-text {
-  color: black;
-  text-shadow: white 1px 1px 4px;
+  color: #000000;
+  text-shadow: #ffffff 1px 1px 4px;
   font-size: 2.5em;
   text-align: right;
   max-width: 550px;
