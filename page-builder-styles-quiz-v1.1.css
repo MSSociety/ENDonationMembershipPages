@@ -147,7 +147,7 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
   cursor: pointer;
   display: flex;
   font-size: 1.425rem;
-  font-weight: bold;
+  font-weight: normal;
   justify-content: center;
   line-height: 30px;
   margin: 20px 0 80px;
