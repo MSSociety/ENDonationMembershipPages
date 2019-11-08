@@ -104,7 +104,7 @@ label.quiz-answer-label:hover, input.quiz-answer-input:checked ~ label, input.qu
 }
 
 .quiz-explanation {
-  color: #EF662F;
+  color: #D14900;
   display: none;
   font-size: 1.425rem;
   font-weight: bold;
