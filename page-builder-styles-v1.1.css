@@ -474,7 +474,7 @@ input[type=radio] ~ .en__field__label {
 }
 
 select.error-override, .en__field__input--select.error-override {
-  height: calc(48px + 8px);
+  height: calc(48px + 6px);
 }
 
 form h2 {
