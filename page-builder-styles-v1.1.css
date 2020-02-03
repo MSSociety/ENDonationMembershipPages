@@ -332,7 +332,8 @@ form {
 }
 
 .en__field {
-    padding-bottom: 6px !important;
+  padding-bottom: 6px !important;
+  vertical-align: top;
 }
 
 select, .en__field__input--select {
