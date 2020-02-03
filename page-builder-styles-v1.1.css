@@ -734,20 +734,18 @@ form h2 {
     padding-bottom: 12px;
 }
 
-@media screen and (max-width: 400px) {
-  .en__field--ccvv {
-    width: 40%;_
-  }
-}
-
 .en__field--ccexpire {
     display: inline-block;
     width: 45%;
 }
 
 @media screen and (max-width: 400px) {
-  .en__field--ccexpire {
-    width: 50%;
+  .en__field--ccexpire, .en__field--ccvv {
+    width: 100%;
+  }
+
+  .en__field--ccvv input {
+    width: 48% !important;
   }
 }
 
