@@ -362,6 +362,10 @@ select, .en__field__input--select {
   }
 }
 
+.en__field__element--splitselect .en__field__item {
+  padding-bottom: 0;
+}
+
 input[type=number], input[type=text], input[type=tel] {
   background: #FFF;
   border: 1px solid #4A4A4A;
