@@ -7,10 +7,11 @@ function moveFloatingContent() {
 
 function updateFieldValidationMessages() {
   validationMessageReplacements = {
-    emal: 'Please check your email address',
+    emal: 'Please enter a valid email address',
     generic: 'This is required',
     special: {
-      'credit-card-expiry': 'Please check the expiry date'
+      'credit-card-expiry': 'Please enter a valid expiry date',
+      'credit-card-number': 'Please enter a valid card number',
     }
   };
 
