@@ -10,6 +10,7 @@ function updateFieldValidationMessages() {
     emal: 'Please check your email address',
     generic: 'This is required',
     special: {
+      'credit-card-expiry': 'Please check the expiry date'
     }
   };
 
