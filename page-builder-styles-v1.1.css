@@ -711,6 +711,10 @@ form h2 {
     content: '';
 }
 
+.en__field--paymenttype {
+  display: none;
+}
+
 .en__field--ccvv {
     display: inline-block;
     width: 40%;
