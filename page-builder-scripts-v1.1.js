@@ -5,6 +5,32 @@ function moveFloatingContent() {
   }
 }
 
+function updateFieldValidationMessages() {
+  validationMessageReplacements = {
+    emal: 'Please check your email address',
+    generic: 'This is required',
+    special: {
+    }
+  };
+
+  $.each(window.EngagingNetworks.validators, function(index, validator) {
+    var validatorType = validator.type.toLowerCase();
+    var validatorTypeSpecial = getSpecialValidator(validator.format);
+
+    if (validatorTypeSpecial && validationMessageReplacements.special.hasOwnProperty(validatorTypeSpecial)) {
+      window.EngagingNetworks.validators[index].errorMessage = validationMessageReplacements.special[validatorTypeSpecial];
+    } else if (validationMessageReplacements.hasOwnProperty(validatorType)) {
+      window.EngagingNetworks.validators[index].errorMessage = validationMessageReplacements[validatorType];
+    } else {
+      window.EngagingNetworks.validators[index].errorMessage = validationMessageReplacements.generic;
+    }
+  });
+}
+
+function onENValidateSetupComplete() {
+  updateFieldValidationMessages();
+}
+
 $(document).ready(function() {
   moveFloatingContent();
   
