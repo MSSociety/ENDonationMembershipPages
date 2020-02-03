@@ -462,6 +462,14 @@ input[type=radio] ~ .en__field__label {
     color: #cd2026;
 }
 
+.error-override {
+  border: solid 4px #cd2026 !important;
+}
+
+select.error-override, .en__field__input--select.error-override {
+  height: calc(48px + 8px);
+}
+
 form h2 {
   border-bottom: none !important;
   padding-bottom: 0 !important;
