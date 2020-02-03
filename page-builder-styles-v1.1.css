@@ -459,7 +459,8 @@ input[type=radio] ~ .en__field__label {
 }
 
 .en__field__error {
-    color: #cd2026;
+  color: #cd2026;
+  margin-top: 6px;
 }
 
 .error-override {
