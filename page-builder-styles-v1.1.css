@@ -469,6 +469,12 @@ input[type=radio] ~ .en__field__label {
   margin-top: 6px;
 }
 
+@media screen and (min-width: 768px) {
+  .en__field--firstName .en__field__error, .en__field--ccvv .en__field__error {
+    text-align: right;
+  }
+}
+
 .error-override {
   border: solid 4px #cd2026 !important;
 }
