@@ -31,9 +31,27 @@ function updateFieldValidationMessages() {
 
 function initiateSlider() {
   $('.footer-slider').slick({
+    arrows: false,
     dots: true,
     infinite: true
   });
+
+  repositionSliderDots();
+  $('.slider-prev, .slider-prev-arrow').click(function() {
+    $('.footer-slider').slick('slickPrev');
+    repositionSliderDots();
+  });
+  $('.slider-next, .slider-next-arrow').click(function() {
+    $('.footer-slider').slick('slickNext');
+    repositionSliderDots();
+  });
+  $(window).resize(function() {
+    repositionSliderDots();
+  });
+}
+
+function repositionSliderDots() {
+  $('.slick-dots').css('bottom', $('.slick-slider').height() - $('.slick-current .footer-content').height() - 53);
 }
 
 function onENValidateSetupComplete() {
