@@ -29,8 +29,16 @@ function updateFieldValidationMessages() {
   });
 }
 
+function initiateSlider() {
+  $('.footer-slider').slick({
+    dots: true,
+    infinite: true
+  });
+}
+
 function onENValidateSetupComplete() {
   updateFieldValidationMessages();
+  initiateSlider();
 }
 
 $(document).ready(function() {
