@@ -875,7 +875,7 @@ a.slider-prev, a.slider-next, a.slider-prev:hover, a.slider-next:hover,
 }
 
 .slick-dots li.slick-active button:before {
-  color: #721e63;
+  color: #EF662F;
 }
 
 .footer-content {
@@ -884,7 +884,7 @@ a.slider-prev, a.slider-next, a.slider-prev:hover, a.slider-next:hover,
   border-top-left-radius: 25px;
   display: flex;
   min-height: 396px;
-  padding: 40px 20px;
+  padding: 40px;
   margin-bottom: 40px;
 }
 
@@ -948,6 +948,7 @@ a.slider-prev, a.slider-next, a.slider-prev:hover, a.slider-next:hover,
   .footer-content {
     flex-wrap: wrap;
     min-height: 662px;
+    padding: 40px 20px;
   }
   .footer-content iframe {
     min-height: 240px;

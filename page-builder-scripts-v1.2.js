@@ -58,7 +58,8 @@ function initiateSlider() {
 }
 
 function repositionSliderDots() {
-  $('.slick-dots').css('bottom', $('.slick-slider').height() - $('.slick-current .footer-content').height() - 53);
+  $('.slick-dots').css('bottom', $('.slick-slider').height() - $('.slick-current .footer-content').height() - 16);
+  $('.slick-dots').css('left', ($('.slick-list').width() / 2) - ($('.slick-dots').width() / 2));
 }
 
 function onENValidateSetupComplete() {
