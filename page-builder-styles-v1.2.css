@@ -560,7 +560,7 @@ form h2 {
     margin-right: 10px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479px) {
   .en__field--NOT_TAGGED_10 .en__field__item {
     width: 45%;
   }
@@ -739,7 +739,7 @@ form h2 {
     width: 45%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479px) {
   .en__field--ccexpire, .en__field--ccvv {
     width: 100%;
   }
@@ -816,7 +816,7 @@ form h2 {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479px) {
   .slider-navigation-prev, .slider-navigation-next {
     font-size: 13px;
   }
