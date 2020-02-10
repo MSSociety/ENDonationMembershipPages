@@ -806,13 +806,18 @@ form h2 {
   cursor: pointer;
 }
 
+.slider-prev-arrow img, .slider-next-arrow img {
+  height: 16px;
+  width: auto;
+}
+
 @media screen and (max-width: 600px) {
   .slider-navigation-prev, .slider-navigation-next {
     font-size: 14px;
   }
 
-  .slider-prev-arrow, .slider-next-arrow {
-    font-size: 14px;
+  .slider-prev-arrow img, .slider-next-arrow img {
+    height: 16px;
   }
 }
 
@@ -821,8 +826,8 @@ form h2 {
     font-size: 13px;
   }
 
-  .slider-prev-arrow, .slider-next-arrow {
-    font-size: 13px;
+  .slider-prev-arrow img, .slider-next-arrow img {
+    height: 14px;
   }
 }
 
@@ -837,19 +842,7 @@ form h2 {
 .slider-prev-arrow, .slider-next-arrow {
   cursor: pointer;
   display: inline-block;
-  font-size: 20px;
   vertical-align: middle;
-}
-
-/*
-a.slider-prev, a.slider-next, a.slider-prev:hover, a.slider-next:hover,
-.slider-prev-arrow a, .slider-next-arrow a, .slider-prev-arrow a:hover, .slider-next-arrow a:hover {
-  color: #721e63;
-}
-*/
-
-.slider-prev-arrow a:hover, .slider-next-arrow a:hover {
-  text-decoration: none;
 }
 
 .slider-prev-arrow {
