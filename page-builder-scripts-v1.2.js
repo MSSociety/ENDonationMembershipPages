@@ -59,7 +59,15 @@ function initiateSlider() {
 
 function repositionSliderDots() {
   $('.slick-dots').css('bottom', $('.slick-slider').height() - $('.slick-current .footer-content').height() - 53);
-  $('.slick-dots').css('left', ($('.slick-list').width() / 2) + 15 + (($('.footer-content-50').width() / 2) - ($('.slick-dots').width() / 2)));
+
+  var leftOffset = $('.footer-content').css('flex-wrap') === 'wrap' ? 0 : ($('.slick-list').width() / 2);
+  $('.slick-dots').css('left',
+    leftOffset
+    + parseInt($('.footer-content').css('padding-left'))
+    + parseInt($('.footer-content-50:nth-child(2)').css('padding-left'))
+    + ($('.footer-content-50').width() / 2)
+    - ($('.slick-dots').width() / 2)
+  );
 }
 
 function onENValidateSetupComplete() {
