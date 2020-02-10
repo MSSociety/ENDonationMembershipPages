@@ -64,7 +64,6 @@ function repositionSliderDots() {
   $('.slick-dots').css('left',
     leftOffset
     + parseInt($('.footer-content').css('padding-left'))
-    + parseInt($('.footer-content-50:nth-child(2)').css('padding-left'))
     + ($('.footer-content-50').width() / 2)
     - ($('.slick-dots').width() / 2)
   );
