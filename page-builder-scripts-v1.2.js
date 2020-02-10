@@ -15,6 +15,8 @@ function updateFieldValidationMessages() {
     special: {
       'credit-card-expiry': 'Please enter a valid expiry date',
       'credit-card-number': 'Please enter a valid card number',
+      'pca-bank-account-uk': 'Please enter valid matching bank details',
+      'pca-bank-sort-code-uk': 'Please enter valid matching bank details',
     }
   };
 
