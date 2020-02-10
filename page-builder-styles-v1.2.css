@@ -939,10 +939,6 @@ form h2 {
   justify-content: space-between;
 }
 
-.footer-content-text, .footer-content-text p {
-  color: #721e63;
-}
-
 .footer-content-video {
   min-height: 19vw;
 }
