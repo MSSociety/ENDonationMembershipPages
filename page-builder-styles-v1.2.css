@@ -806,7 +806,7 @@ form h2 {
   cursor: pointer;
 }
 
-.slider-prev-arrow img, .slider-next-arrow img {
+.footer-content .slider-prev-arrow img, .footer-content .slider-next-arrow img {
   height: 16px;
   width: auto;
 }
@@ -816,7 +816,7 @@ form h2 {
     font-size: 14px;
   }
 
-  .slider-prev-arrow img, .slider-next-arrow img {
+  .footer-content .slider-prev-arrow img, .footer-content .slider-next-arrow img {
     height: 16px;
   }
 }
@@ -826,7 +826,7 @@ form h2 {
     font-size: 13px;
   }
 
-  .slider-prev-arrow img, .slider-next-arrow img {
+  .footer-content .slider-prev-arrow img, .footer-content .slider-next-arrow img {
     height: 14px;
   }
 }
@@ -842,15 +842,15 @@ form h2 {
 .slider-prev-arrow, .slider-next-arrow {
   cursor: pointer;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .slider-prev-arrow {
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 .slider-next-arrow {
-  margin-left: 3px;
+  margin-left: 5px;
 }
 
 .slick-dots {
