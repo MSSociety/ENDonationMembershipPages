@@ -827,11 +827,17 @@ form h2 {
 
 @media screen and (max-width: 479px) {
   .slider-navigation-prev, .slider-navigation-next {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .footer-content .slider-prev-arrow img, .footer-content .slider-next-arrow img {
     height: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slider-navigation-prev, .slider-navigation-next {
+    font-size: 13px;
   }
 }
 
