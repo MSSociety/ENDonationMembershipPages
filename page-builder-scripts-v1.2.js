@@ -9,6 +9,9 @@ function updateFieldValidationMessages() {
   validationMessageReplacements = {
     emal: 'Please enter a valid email address',
     generic: 'This is required',
+    name: {
+      'supporter.NOT_TAGGED_10': 'Please note we can only accept donations of a minimum of £2',
+    },
     special: {
       'credit-card-expiry': 'Please enter a valid expiry date',
       'credit-card-number': 'Please enter a valid card number',
@@ -19,7 +22,9 @@ function updateFieldValidationMessages() {
     var validatorType = validator.type.toLowerCase();
     var validatorTypeSpecial = getSpecialValidator(validator.format);
 
-    if (validatorTypeSpecial && validationMessageReplacements.special.hasOwnProperty(validatorTypeSpecial)) {
+    if (validationMessageReplacements.name.hasOwnProperty(validator.fieldName)) {
+      window.EngagingNetworks.validators[index].errorMessage = validationMessageReplacements.name[validator.fieldName];
+    } else if (validatorTypeSpecial && validationMessageReplacements.special.hasOwnProperty(validatorTypeSpecial)) {
       window.EngagingNetworks.validators[index].errorMessage = validationMessageReplacements.special[validatorTypeSpecial];
     } else if (validationMessageReplacements.hasOwnProperty(validatorType)) {
       window.EngagingNetworks.validators[index].errorMessage = validationMessageReplacements[validatorType];
