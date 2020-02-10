@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+a:focus {
+  box-shadow: none !important;
+}
+
 /* Form */
 form {
   background: transparent !important;
