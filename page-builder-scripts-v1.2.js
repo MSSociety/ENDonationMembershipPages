@@ -54,6 +54,32 @@ function setMinimumOtherAmounts() {
   });
 }
 
+function setCharAt(str,index,chr) {
+  if(index > str.length-1) return str;
+
+  return str.substr(0,index) + chr + str.substr(index+1);
+}
+
+function replaceForChars(string, number) {
+  for (i = 0; i < number; i++) {
+    string = setCharAt(string, i, 'X');
+  }
+
+  return string;
+}
+
+function setPartialBankDetailsHiddenFields() {
+  // Account number
+  $('input[name="supporter.NOT_TAGGED_8"]').change(function() {
+    $('input[name="supporter.NOT_TAGGED_50"]').val(replaceForChars($(this).val(), 4));
+  });
+
+  // Sort code
+  $('input[name="supporter.NOT_TAGGED_9"]').change(function() {
+    $('input[name="supporter.NOT_TAGGED_51"]').val(replaceForChars($(this).val(), 4));
+  });
+}
+
 function initiateSlider() {
   $('.footer-slider').slick({
     arrows: false,
@@ -90,6 +116,7 @@ function repositionSliderDots() {
 function onENValidateSetupComplete() {
   updateFieldValidationMessages();
   setMinimumOtherAmounts();
+  setPartialBankDetailsHiddenFields();
   initiateSlider();
 }
 
