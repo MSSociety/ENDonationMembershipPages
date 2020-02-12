@@ -42,16 +42,6 @@ function setMinimumOtherAmounts() {
       $('.en__field--NOT_TAGGED_10 .en__field__input--other').focus();
     }, 300);
   });
-
-  $('.en__field--NOT_TAGGED_10 .en__field__input--other').on('blur', function() {
-    var givingFrequency = $('input[name="supporter.NOT_TAGGED_5"]:checked').val();
-    var minOtherAmount = 2;
-    var otherInputVal = $('.en__field--NOT_TAGGED_10 .en__field__input--other').val();
-
-    if (otherInputVal < minOtherAmount) {
-      $('.en__field--NOT_TAGGED_10 .en__field__input--other').val(minOtherAmount);
-    }
-  });
 }
 
 function setCharAt(str,index,chr) {
