@@ -700,7 +700,7 @@ form h2 {
 }
 
 .en__field--gift-aid-declaration .en__field__item::after {
-    content: 'I want the MS Society to claim Gift Aid on donations I have made in the past four years, today, and on all future donations. \A\A I am a UK tax payer and understand that if I pay less Income Tax and/or Capital Gains Tax than the amount of Gift Aid claimed on all of my donations in that tax year it is my responsibility to pay any difference.';
+    content: "I'd like the MS Society to claim Gift Aid on donations I have made in the past four years, today, and on all future donations. \A\A I am a UK taxpayer and understand that if I pay less Income Tax and/or Capital Gains Tax than the amount of Gift Aid claimed on all of my donations in that tax year it is my responsibility to pay any difference. \A\A Please note Gift Aid is reclaimed by the charity from the tax you pay for the current tax year and your address is needed to identify you as a UK taxpayer. The MS Society will claim 25p on every £1 donated.";
     display: block;
     white-space: pre-line;
     margin: 20px 0;
