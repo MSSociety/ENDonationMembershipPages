@@ -9,6 +9,10 @@ a, a:link, a:visited, a:hover, a:active {
   text-decoration: underline;
 }
 
+.cta-strip a, .cta-strip a:link, .cta-strip a:visited, .cta-strip a:hover, .cta-strip a:active {
+  text-decoration: none;
+}
+
 a:focus {
   box-shadow: none !important;
 }
