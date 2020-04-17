@@ -77,6 +77,18 @@ function initiateSlider() {
     infinite: true
   });
 
+  $('.footer-slider').on('init', function(event, slick) {
+    $(document).keydown(function(event) {
+      if (document.activeElement.tagName.toLowerCase() !== 'input') {
+        if (event.key === 'ArrowLeft') {
+          $('.footer-slider').slick('slickPrev');
+        } else if (event.key === 'ArrowRight') {
+          $('.footer-slider').slick('slickNext');
+        }
+      }
+    });
+  });
+
   repositionSliderDots();
   $('.slider-prev, .slider-prev-arrow').click(function() {
     $('.footer-slider').slick('slickPrev');
