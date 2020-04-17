@@ -78,6 +78,7 @@ function initiateSlider() {
   });
 
   $('.footer-slider').on('init', function(event, slick) {
+    console.log('Slider initialised');
     $(document).keydown(function(event) {
       if (document.activeElement.tagName.toLowerCase() !== 'input') {
         if (event.key === 'ArrowLeft') {
