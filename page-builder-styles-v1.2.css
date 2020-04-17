@@ -103,7 +103,7 @@ form {
 }
 
 .top-menu-link a, .top-menu-link a:hover, .top-menu-link a:focus, .top-menu-link a:visited {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .top-menu-link a, .top-menu-link a:focus, .top-menu-link a:visited {
