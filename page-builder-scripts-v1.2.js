@@ -77,17 +77,14 @@ function initiateSlider() {
     infinite: true
   });
 
-  $('.footer-slider').on('init', function(event, slick) {
-    console.log('Slider initialised');
-    $(document).keydown(function(event) {
-      if (document.activeElement.tagName.toLowerCase() !== 'input') {
-        if (event.key === 'ArrowLeft') {
-          $('.footer-slider').slick('slickPrev');
-        } else if (event.key === 'ArrowRight') {
-          $('.footer-slider').slick('slickNext');
-        }
+  $(document).keydown(function(event) {
+    if (document.activeElement.tagName.toLowerCase() !== 'input') {
+      if (event.key === 'ArrowLeft') {
+        $('.footer-slider').slick('slickPrev');
+      } else if (event.key === 'ArrowRight') {
+        $('.footer-slider').slick('slickNext');
       }
-    });
+    }
   });
 
   repositionSliderDots();

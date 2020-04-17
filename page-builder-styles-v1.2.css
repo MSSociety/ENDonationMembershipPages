@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: underline;
+}
+
 a:focus {
   box-shadow: none !important;
 }
@@ -824,6 +828,10 @@ form h2 {
   .slider-navigation-prev, .slider-navigation-next {
     max-width: 100px;
   }
+}
+
+a.slider-prev, a.slider-next {
+  color: #d14900;
 }
 
 .footer-content .slider-prev-arrow img, .footer-content .slider-next-arrow img {
