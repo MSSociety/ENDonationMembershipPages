@@ -6,11 +6,23 @@
 }
 
 a, a:link, a:visited, a:hover, a:active {
+  color: #d14900;
   text-decoration: underline;
 }
 
 .cta-strip a, .cta-strip a:link, .cta-strip a:visited, .cta-strip a:hover, .cta-strip a:active {
   text-decoration: none;
+}
+
+.btn--style-a, .btn--style-a:link, .btn--style-a:visited {
+  border: 2px solid #d14900;
+  color: #d14900;
+}
+
+.btn--style-a:hover, .btn--style-a:active {
+  background-color: #d14900;
+  border: 2px solid #d14900;
+  color: white;
 }
 
 a:focus {
