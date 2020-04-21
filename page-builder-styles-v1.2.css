@@ -86,7 +86,7 @@ form {
 }
 
 :focus {
-  outline: none !important;
+  box-shadow: 2px 2px 1px #f2ab8f !important;
 }
 
 #top-menu-links {
