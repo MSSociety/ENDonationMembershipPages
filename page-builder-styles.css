@@ -247,6 +247,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 
 .en__field--title {
     display: inline-block;
+    vertical-align: top;
     width: 25%;
 }
 
@@ -256,6 +257,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 
 .en__field--firstName {
     display: inline-block;
+    vertical-align: top;
     width: 74%;
 }
 
