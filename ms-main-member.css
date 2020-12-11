@@ -1,0 +1,1182 @@
+@charset "utf-8";
+/* ============================================================ *
+  #MAIN
+
+  Site:        MS Society Donations Landing Page
+  Author:      Daniel Furze <daniel.furze@codecomputerlove.com>
+  packageName: ms-society-donations-landing-page
+
+/* ============================================================ */
+/**
+* CONTENTS
+*
+* _SETTINGS
+* Variables for colors
+* Global variables
+* Layout these are 'em' widths based on default font size of 16px;
+*
+* _TOOLS
+*  Common Sass mixins
+* Common Sass functions
+* Svgsprite - generated styles from the Gulp SVG sprite task
+*
+* _GENERIC
+*  Font declarations
+*  Global styles
+*  Normalize - sets all elements to a common state regardless of browser.
+*
+* _OBJECTS
+*  Button styles
+*  Base form styles
+* Layout - styles for all layout and or grid system
+*  Generic reusable list styles
+*  Base typography styles
+*
+* _COMPONENTS
+*  Banner
+*  CTA banner strip
+*  Donation widget
+*  Site footer
+*  Site header
+*  Hero component
+*  Link strip
+*
+* _TRUMPS
+*  CSS overrides and hacks for Engaging Networks' outputted markup
+*  Vendor fonts CSS
+*  3rd party CSS for SSStandard icon font
+*
+*/
+@import url("//hello.myfonts.net/count/31f53d");
+.u-visually-hidden { clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; position: absolute; width: 1px; }
+
+.u-visually-hidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+html { box-sizing: border-box; }
+
+*,:after,:before { box-sizing: inherit; }
+
+body { background: #FFF; font-family: "DSariMedium", sans-serif; font-size: 16px; font-size: 1rem; line-height: 1; }
+
+img { height: auto; max-width: 100%; }
+
+a { color: #EF662F; text-decoration: none; }
+
+a:focus,a:hover { text-decoration: underline; }
+
+a:focus { box-shadow: 0 0 2px 1px #EF662F; outline: none; }
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+
+body { margin: 0; }
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary { display: block; }
+
+audio,canvas,progress,video { display: inline-block; vertical-align: baseline; }
+
+img { border: 0; }
+
+button,input,optgroup,select,textarea { color: inherit; font: inherit; margin: 0; }
+
+button,html input[type=button],input[type=reset],input[type=submit] { -webkit-appearance: button; cursor: pointer; }
+
+button::-moz-focus-inner,input::-moz-focus-inner { border: 0; padding: 0; }
+
+input[type=checkbox],input[type=radio] { box-sizing: border-box; padding: 0; }
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button { height: auto; }
+
+blockquote,body,caption,dd,dl,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,legend,ol,p,pre,table,td,th,ul { margin: 0; padding: 0; }
+
+.btn { display: block; font-size: 14px;  margin: 0 20px 20px; padding: 15px 20px; position: relative; text-decoration: none; -webkit-transition: all .25s ease; transition: all .25s ease; width: auto; word-wrap: break-word; }
+
+
+
+
+
+@media screen and (min-width: 42.5em){
+    .btn { font-size: 16px; font-size: 1rem; }
+}
+
+/*-------------------------MEMBERSHIP STYLES----------------------------------
+------------------------------------------------------------------------------*/
+#Additional_DonationDiv, #Membership_numberDiv {border-radius: 8px;}
+
+#Additional_DonationDiv {
+       background-color: #f4f4f4;
+    padding: 15px 5% 0px 5%;
+    margin-bottom: 1em;
+}
+
+#Additional_DonationDiv .eaFormElementLabel, #Subscription_typeDiv .eaFormElementLabel, #Membership_numberDiv .eaFormElementLabel, #Gift_TypeDiv .eaFormElementLabel, #Subscription_type_renewalDiv .eaFormElementLabel {
+    font-size: 1.2em;
+    display: block;
+}
+
+#Subscription_typeDiv .eaFormElementLabel, #Subscription_type_renewalDiv .eaFormElementLabel {
+    border-top: solid 1px #ccc;
+    padding-top: 1em;
+}
+#Additional_DonationDiv .eaFormRadio label {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+#No_Branch_MembershipY {
+    margin-right: 10px;
+}
+#Gift_TypeDiv .eaMandatoryFieldMarker {display: none;}
+/*#Additional_DonationDiv, #Subscription_typeDiv, #Subscription_type_renewalDiv  {text-align: center;}
+#Membership_numberDiv {
+    background-color: #ccc;
+    padding-top: 20px;
+}
+#Membership_number {
+    width: 60%;
+}*/
+#Gift_TypeDiv input[type="radio"], #Subscription_typeDiv input[type="radio"], #Subscription_type_renewalDiv input[type="radio"] {
+    display: none;
+}
+#Gift_TypeDiv .eaFormRadio label, #Subscription_typeDiv .eaFormRadio label, #Subscription_type_renewalDiv .eaFormRadio label {
+  display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 5px 10px 5px;
+    margin-right: 1%;
+    width: 99.3%;
+    font-size: 1.2em;
+    color: #4A4A4A;
+    background-color: #c7c9c9;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+}
+#Gift_TypeDiv .eaFormRadio label:last-of-type, #Subscription_typeDiv .eaFormRadio label:last-of-type, #Subscription_type_renewalDiv .eaFormRadio label:last-of-type {
+    margin-right: 0px;
+    line-height: 2.3em;
+}
+#Gift_TypeDiv .eaFormRadio input[type="radio"]:checked + label, #Subscription_typeDiv .eaFormRadio input[type="radio"]:checked + label, #Subscription_type_renewalDiv .eaFormRadio input[type="radio"]:checked + label {
+    background-color: #EF662F;
+    color: #FFF;
+}
+#Gift_TypeDiv  .eaFormRadio label:hover, #Subscription_typeDiv .eaFormRadio label:hover, #Subscription_type_renewalDiv .eaFormRadio label:hover {
+	background-color: #DBDBDB;
+	box-shadow: none;
+}
+/*-------------------------END MEMBERSHIP STYLES-----------------------------*/
+.btn:focus,.btn:hover { outline: none; text-decoration: none; }
+
+.btn--style-a { background: #FFF; border: 2px solid #EF662F; border-radius: 7px; color: #EF662F; }
+
+.btn--style-a:focus,.btn--style-a:hover { background: #EF662F; color: #FFF; }
+
+.btn--style-a i { margin-right: 10px; }
+
+.btn--style-b { background: #FFF; border: 2px solid #FFF; border-radius: 7px; color: #EF662F; text-align: left; }
+
+.btn--style-b:focus,.btn--style-b:hover { background: #EF662F; color: #FFF; }
+
+.btn--style-b:after { position: absolute; top: 50%; right: 20px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.btn--style-c { background: #EF662F; border: none; border-radius: 7px; color: #FFF; }
+
+input:focus { box-shadow: 0 0 2px 1px #EF662F; outline: none; }
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+input[type=number],input[type=text] { background: #FFF; border: 1px solid #4A4A4A; border-radius: 5px; /*margin-left: 5px;*/ padding: 15px; position: relative; }
+
+.form__row { margin-bottom: 30px; }
+
+.form__row:first-of-type { margin-top: 5px; }
+
+.input--currency { display: inline-block; position: relative; }
+
+.input--currency .currency { position: absolute; left: 15px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 99; }
+
+.input--currency input { padding-left: 25px; }
+
+.control { cursor: pointer; display: inline-block; padding-left: 1.5rem; position: relative; }
+
+.control input { position: absolute; opacity: 0; z-index: -1; }
+
+.control input:checked~.control-indicator { background-color: #FFF; color: #EF662F; }
+
+.control input:active~.control-indicator { background-color: #f6ac8e; color: #FFF; }
+
+.checkbox { line-height: 1.75; }
+
+.control-indicator { position: absolute; top: .25rem; left: 0; display: block; width: 1rem; height: 1rem; line-height: 1rem; font-size: 65%; color: #eee; text-align: center; background-color: #eee; background-size: 50% 50%; background-position: center center; background-repeat: no-repeat; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+
+.checkbox .control-indicator,.radio .control-indicator { border-radius: 25%; }
+
+.radio input:checked~.control-indicator { background-color: #FFF; }
+
+.radio input:checked~.control-indicator:after { content: '✓'; font-family: 'SSStandard'; }
+
+.radio--style-a { border-radius: 5px; padding: 20px 20px 20px 40px; }
+
+.radio--style-a.is-checked,.radio--style-a:hover { background: #EF662F; color: #FFF; }
+
+.radio--style-a.is-checked .control-indicator,.radio--style-a:hover .control-indicator { border-color: #FFF; }
+
+.radio--style-a .control-indicator { height: 18px; width: 18px; border: 1px solid #4A4A4A; background: #FFF; margin: 15px; padding: 2px; }
+
+.radio--style-b { background: #FFF; border: 1px solid #4A4A4A; border-radius: 5px; font-size: 34px; font-size: 2.125rem; padding: 18px 12px; -webkit-transition: all .25s ease; transition: all .25s ease; }
+
+.radio--style-b.is-checked,.radio--style-b:hover { background: #EF662F; border-color: #EF662F; color: #FFF; }
+
+.checkbox .control-indicator { height: 18px; width: 18px; border: 1px solid #4A4A4A; padding: 1px; }
+
+.checkbox input:checked~.control-indicator { background-color: #EF662F; border-color: #EF662F; color: #FFF; }
+
+.checkbox input:checked~.control-indicator:after { content: '✓'; font-family: 'SSStandard'; }
+
+.validation-message { background: #FFD8D8; border: 1px solid #FF001F; border-radius: 5px; color: #FF001F; display: none; margin: 0 auto 30px; max-width: 75%; padding: 5px; text-align: center; }
+
+.validation-message:before { content: '✓'; font-family: 'SSStandard'; font-size: 16px; font-size: 1rem; margin-right: 10px; }
+
+.is-invalid .validation-message { display: block; }
+
+.is-invalid,input.is-invalid { background: #FFD8D8; border: 1px solid #FF001F; color: #FF001F; }
+
+.is-invalid:before,input.is-invalid:before { content: 'Ã¢Å¡Â '; font-family: 'SSStandard'; font-size: 16px; font-size: 1rem; margin-right: 10px; }
+
+/*#Gift_TypeField .eaFormRadio.is-invalid:before,.radio--style-a.is-invalid:before { display: none; }*/
+
+.radio--style-b.is-invalid:before { display: none; }
+
+.wrapper { margin: 0 auto; max-width: 63.75rem; padding: 7px 10px; }
+
+.wrapper:after { content: ""; display: table; clear: both; }
+
+.grid { margin-left: -10px; }
+
+.grid:after { content: ""; display: table; clear: both; }
+
+.grid__row { margin-bottom: 20px; }
+
+.grid__row:after { content: ""; display: table; clear: both; }
+
+.list--unstyled li { list-style: none; }
+
+.list--inline li { display: inline; }
+
+.h2,h2 { font-size: 32px; font-size: 2rem; font-weight: lighter; line-height: 38px; line-height: 2.375rem; margin-bottom: 15px; }
+
+.banner { background: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/MS_banner_orange.png?v=1471422467000") repeat-x; background-size: 100% 100%; border-radius: 3px 3px 3px 25px; color: #FFF; margin-bottom: 50px; padding: 50px 20px; text-align: center; }
+
+.banner .btn { font-family: 'DSariBold'; }
+
+.banner .btn:after { background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sprite.svg?v=1471422477000"); background-repeat: no-repeat; content: ' '; display: inline-block; background-position: 100% 0; height: 20px; width: 20px; }
+
+.banner .btn:hover:after { background-position: 0 100%; }
+
+.banner__heading { margin-bottom: 50px; }
+
+.cta-strip { margin-bottom: 50px; text-align: center; }
+
+.cta-strip__heading { color: #4A4A4A; margin-bottom: 40px; }
+
+.cta__btn { font-family: 'DSariBook'; }
+
+.cta__btn--phone { font-size: 16px; font-size: 1rem; }
+
+form { background: #E8E8E8; border-radius: 7px; color: #4A4A4A; margin: -250px 10px 60px; padding: 20px 10px; position: relative; z-index: 10; }
+
+form:after { content: ""; display: table; clear: both; }
+
+form .radio--style-a { width: 49%; }
+
+.form__row { text-align: center; }
+
+.form__row:after { content: ""; display: table; clear: both; }
+
+.donation-widget__submit { font-size: 18px; font-size: 1.125rem; margin: 0; padding-right: 60px; position: relative; width: 100%; }
+
+.donation-widget__submit:after { background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sprite.svg?v=1471422477000"); background-repeat: no-repeat; content: ' '; display: inline-block; background-position: 0 100%; height: 20px; width: 20px; position: absolute; top: 50%; right: 20px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.donation-widget__payment-logos img { display: block; margin: 0 auto; }
+
+.form__row--donate-amounts--alt { display: none; }
+
+.site-footer { background: #E8E8E8; color: #4A4A4A; font-size: 12px; font-size: 0.75rem; line-height: 22px; line-height: 1.375rem; text-align: center; }
+
+.site-footer__nav-list { margin: 20px 0; }
+
+.site-footer__nav-list__item { position: relative; }
+
+.site-footer__nav-list__item:after { content: "|"; position: absolute; right: 0; }
+
+.site-footer__nav-list__item:last-of-type:after { content: ''; }
+
+.site-footer__nav-link { color: #4A4A4A; padding: 10px; }
+
+.site-footer__meta { margin-bottom: 10px; }
+
+.site-footer__logos { margin: 30px 0; }
+
+.site-header { background: #FFF; }
+
+.site-header__logo { height: 60px; width: 100px; float: left; }
+
+.site-header__logo a,.site-header__logo img { display: block; }
+
+.site-header__navigation { float: right; line-height: 60px; line-height: 3.75rem; }
+
+.site-header__link { display: block; height: 60px; position: relative; }
+
+.site-header__link:before { background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sprite.svg?v=1471422477000"); background-repeat: no-repeat; content: ' '; display: inline-block; background-position: 0 0; height: 26px; width: 26px; position: absolute; top: 50%; left: -30px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.hero { position: relative; }
+
+.hero__inner { overflow: hidden; padding: 0; position: relative; }
+
+.hero__inner:after { background: rgba(0, 0, 0, 0.45); background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, transparent 100%); background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%); display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+.hero__body { color: #FFF; position: absolute; top: 35px; padding: 0 30px; text-align: center; width: 100%; z-index: 9; }
+
+.hero__title { font-size: 45px; font-size: 2.8125rem; margin-bottom: 15px; }
+
+.hero__subtitle { font-size: 18px; font-size: 1.125rem; font-weight: lighter; line-height: 25px; line-height: 1.5625rem; }
+
+.hero__image { display: block; }
+
+.hero__image img { display: block; width: 100%; }
+
+.link-strip { margin-bottom: 25px; }
+
+.link-strip__heading { color: #4A4A4A; text-align: center; }
+
+.link-strip__list { list-style: none; }
+
+.link-strip__list-link { display: block; padding: 20px 40px; }
+
+
+.eaFullWidthContent:after { content: ""; display: table; clear: both; }
+
+.eaFormRadio { cursor: pointer; }
+
+/*#Gift_TypeDiv .eaFormElementLabel { display: none; }*/
+
+/*#Gift_TypeField .eaFormRadio { border-radius: 5px; padding: 20px 20px 20px 40px; }
+
+#Gift_TypeField .eaFormRadio input[type=radio] { display: none; }
+
+#Gift_TypeField .eaFormRadio:first-of-type { margin-right: 5px; }
+
+#Gift_TypeField .eaFormRadio.is-checked,#Gift_TypeField .eaFormRadio:hover { background: #EF662F; color: #FFF; }
+
+#Gift_TypeField .eaFormRadio.is-checked .control-indicator,#Gift_TypeField .eaFormRadio:hover .control-indicator { border-color: #FFF; }*/
+
+.control-indicator { height: 18px; width: 18px; border: 1px solid #4A4A4A; border-radius: 3px; background: #FFF; margin: 15px; padding: 2px; position: absolute; top: .25rem; left: 0; display: block; width: 1rem; height: 1rem; line-height: 1rem; font-size: 65%; color: #eee; text-align: center; background-color: #eee; background-size: 50% 50%; background-position: center center; background-repeat: no-repeat; -webkit-user-select: none; -moz-user-select: none; user-select: none; }
+
+#DD_Gift_AmountDiv .eaFormElementLabel { display: none; }
+
+#DD_Gift_AmountDiv .eaFormRadio label { background: #FFF; border: 1px solid #4A4A4A; border-radius: 5px; cursor: pointer; font-size: 34px; font-size: 2.125rem; padding: 18px 12px; -webkit-transition: all .25s ease; transition: all .25s ease; }
+
+#DD_Gift_AmountDiv .eaFormRadio label.is-checked,#DD_Gift_AmountDiv .eaFormRadio label:hover { background: #EF662F; border-color: #EF662F; color: #FFF; }
+
+#DD_Gift_AmountDiv .eaFormRadio input[type=radio] { display: none; }
+
+/*! @John: new CSS overrides from here */
+#DD_Gift_AmountDiv .eaFormRadio { cursor: pointer; }
+
+/*#DD_Gift_AmountDiv .eaFormRadio label { padding: 10px 20px; }*/
+
+/*#Gift_TypeField .eaFormRadio { position: relative; }
+
+#Gift_TypeField .eaFormRadio.is-checked .control-indicator { color: #EF662F; }
+
+#Gift_TypeField .eaFormRadio.is-checked .control-indicator:after { content: '✓'; font-family: 'SSStandard'; }
+
+#Gift_TypeField .eaFormRadio .control-indicator{ background: #FFF; border-radius: 5px; line-height: 14px; line-height: 0.875rem; }
+
+/*! To here */
+/*! @john more updates from here: */
+#In_Memory_Q_DDDiv .eaFormElementLabel,#In_Memory_Q_SingleDiv .eaFormElementLabel { display: none; }
+
+#In_Memory_Q_SingleField,#In_Memory_Q_DDDiv { text-align: left; }
+
+#In_Memory_Q_SingleField .eaFormCheckbox, #In_Memory_Q_DDDiv .eaFormCheckbox { padding-left: 30px; position: relative; }
+
+#In_Memory_Q_SingleField .eaFormCheckbox .control-indicator,#In_Memory_Q_DDDiv .eaFormCheckbox .control-indicator { background: #FFF; border-radius: 5px; line-height: 14px; line-height: 0.875rem; top: -2px; height: 18px; width: 18px; }
+
+#In_Memory_Q_SingleField.eaFormField.is-checked .control-indicator,
+#In_Memory_Q_DDDiv.eaFormField.is-checked .control-indicator,
+#In_Memory_Q_DDField.eaFormField.is-checked .control-indicator  { color: #EF662F; }
+
+#In_Memory_Q_SingleField.eaFormField.is-checked .control-indicator:after,
+#In_Memory_Q_DDDiv.eaFormField.is-checked .control-indicator:after,
+#In_Memory_Q_DDField.eaFormField.is-checked .control-indicator:after { content: '✓'; font-family: 'SSStandard'; }
+
+#In_Memory_Q_SingleField input[type=checkbox] ,
+#In_Memory_Q_DDDiv input[type=checkbox] { display: none; }
+
+.eaform { margin-bottom: 60px; }
+
+label { cursor: pointer; }
+
+/*! To here */
+/** @license MyFonts Webfont Build ID 3274045, 2016-08-24T09:02:08-0400 The fonts listed in this notice are subject to the End User License Agreement(s) entered into by the website owner. All other parties are explicitly restricted from using the Licensed Webfonts(s). You may obtain a valid license at the URLs below. Webfont: DSariMedium by Latinotype URL: http://www.myfonts.com/fonts/latinotype/dsari/medium/ Webfont: DSariBold by Latinotype URL: http://www.myfonts.com/fonts/latinotype/dsari/bold/ Webfont: DSariBook by Latinotype URL: http://www.myfonts.com/fonts/latinotype/dsari/book/ License: http://www.myfonts.com/viewlicense?type=web&buildid=3274045 Licensed pageviews: 1,000,000 Webfonts copyright: Copyright (c) 2014 by Diego Aravena. All rights reserved. Ã‚Â© 2016 MyFonts Inc */
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face { font-family: 'DSariMedium'; src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_0_0.eot?v=1472056061000"); src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_0_0.eot?v=1472056061000?#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_0_0.woff2?v=1472056067000") format("woff2"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_0_0.woff?v=1472056065000") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_0_0.ttf?v=1472056063000") format("truetype"); }
+
+@font-face { font-family: 'DSariBold'; src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_1_0.eot?v=1472056068000"); src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_1_0.eot?v=1472056068000?#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_1_0.woff2?v=1472056074000") format("woff2"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_1_0.woff?v=1472056072000") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_1_0.ttf?v=1472056071000") format("truetype"); }
+
+@font-face { font-family: 'DSariBook'; src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_2_0.eot?v=1472056075000"); src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_2_0.eot?v=1472056075000?#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_2_0.woff2?v=1472056081000") format("woff2"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_2_0.woff?v=1472056079000") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/31F53D_2_0.ttf?v=1472056077000") format("truetype"); }
+
+/* Symbolset www.symbolset.com Copyright Ã‚Â© 2012 Oak Studios LLC Upload this file to your web server and place this within your <head> tags. <link href="webfonts/ss-standard.css" rel="stylesheet" /> */
+@font-face { font-family: "SSStandard"; src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/ss-standard.eot?v=1471422387000"); src: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/ss-standard.eot?v=1471422387000#iefix") format("embedded-opentype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/ss-standard.woff?v=1471422396000") format("woff"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/ss-standard.ttf?v=1471422393000") format("truetype"), url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/ss-standard.svg?v=1471422390000") format("svg"); font-weight: normal; font-style: normal; }
+
+/* This triggers a redraw in IE to Fix IE8's : before content rendering. */
+html:hover [class^=ss-] { -ms-zoom: 1; }
+
+.ss-icon,.ss-icon.ss-standard,[class*=" ss-"].right:after,[class*=" ss-"].ss-standard.right:after,[class*=" ss-"].ss-standard:before,[class*=" ss-"]:before,[class^=ss-].right:after,[class^=ss-].ss-standard.right:after,[class^=ss-].ss-standard:before,[class^=ss-]:before { font-family: "SSStandard"; font-style: normal; font-weight: normal; text-decoration: none; text-rendering: optimizeLegibility; white-space: nowrap; /*-webkit-font-feature-settings:  "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */ -ms-font-feature-settings: "liga" 1; -o-font-feature-settings: "liga"; -webkit-font-feature-settings: "liga"; font-feature-settings: "liga"; -webkit-font-smoothing: antialiased; }
+
+[class*=" ss-"].right:before,[class^=ss-].right:before { display: none; content: ''; }
+
+.ss-cursor.right:after,.ss-cursor:before { content: 'Ã®â‚¬Â'; }
+
+.ss-crosshair.right:after,.ss-crosshair:before { content: 'Ã¢Å’â€“'; }
+
+.ss-search.right:after,.ss-search:before { content: 'Ã°Å¸â€Å½'; }
+
+.ss-zoomin.right:after,.ss-zoomin:before { content: 'Ã®â‚¬â€š'; }
+
+.ss-zoomout.right:after,.ss-zoomout:before { content: 'Ã®â‚¬Æ’'; }
+
+.ss-view.right:after,.ss-view:before { content: 'Ã°Å¸â€˜â‚¬'; }
+
+.ss-attach.right:after,.ss-attach:before { content: 'Ã°Å¸â€œÅ½'; }
+
+.ss-link.right:after,.ss-link:before { content: 'Ã°Å¸â€â€”'; }
+
+.ss-move.right:after,.ss-move:before { content: 'Ã®ÂÂ°'; }
+
+.ss-write.right:after,.ss-write:before { content: 'Ã¢Å“Å½'; }
+
+.ss-writingdisabled.right:after,.ss-writingdisabled:before { content: 'Ã®ÂÂ±'; }
+
+.ss-erase.right:after,.ss-erase:before { content: 'Ã¢Å“Â'; }
+
+.ss-compose.right:after,.ss-compose:before { content: 'Ã°Å¸â€œÂ'; }
+
+.ss-lock.right:after,.ss-lock:before { content: 'Ã°Å¸â€â€™'; }
+
+.ss-unlock.right:after,.ss-unlock:before { content: 'Ã°Å¸â€â€œ'; }
+
+.ss-key.right:after,.ss-key:before { content: 'Ã°Å¸â€â€˜'; }
+
+.ss-backspace.right:after,.ss-backspace:before { content: 'Ã¢Å’Â«'; }
+
+.ss-ban.right:after,.ss-ban:before { content: 'Ã°Å¸Å¡Â«'; }
+
+.ss-trash.right:after,.ss-trash:before { content: 'Ã®Æ’Â'; }
+
+.ss-target.right:after,.ss-target:before { content: 'Ã¢â€”Å½'; }
+
+.ss-tag.right:after,.ss-tag:before { content: 'Ã®â€žâ‚¬'; }
+
+.ss-bookmark.right:after,.ss-bookmark:before { content: 'Ã°Å¸â€â€“'; }
+
+.ss-flag.right:after,.ss-flag:before { content: 'Ã¢Å¡â€˜'; }
+
+.ss-like.right:after,.ss-like:before { content: 'Ã°Å¸â€˜Â'; }
+
+.ss-dislike.right:after,.ss-dislike:before { content: 'Ã°Å¸â€˜Å½'; }
+
+.ss-heart.right:after,.ss-heart:before { content: 'Ã¢â„¢Â¥'; }
+
+.ss-halfheart.right:after,.ss-halfheart:before { content: 'Ã®â€ Â '; }
+
+.ss-star.right:after,.ss-star:before { content: 'Ã¢â€¹â€ '; }
+
+.ss-halfstar.right:after,.ss-halfstar:before { content: 'Ã®â€ Â¡'; }
+
+.ss-sample.right:after,.ss-sample:before { content: 'Ã®Ë†â‚¬'; }
+
+.ss-crop.right:after,.ss-crop:before { content: 'Ã®Ë†Â'; }
+
+.ss-layers.right:after,.ss-layers:before { content: 'Ã®Ë†â€š'; }
+
+.ss-fill.right:after,.ss-fill:before { content: 'Ã®â€°â‚¬'; }
+
+.ss-stroke.right:after,.ss-stroke:before { content: 'Ã®â€°Â'; }
+
+.ss-phone.right:after,.ss-phone:before { content: '📞'; }
+
+.ss-phonedisabled.right:after,.ss-phonedisabled:before { content: 'Ã®Å’â‚¬'; }
+
+.ss-rss.right:after,.ss-rss:before { content: 'Ã®Å’Â'; }
+
+.ss-facetime.right:after,.ss-facetime:before { content: 'Ã®Å’Â '; }
+
+.ss-reply.right:after,.ss-reply:before { content: 'Ã¢â€ Â©'; }
+
+.ss-send.right:after,.ss-send:before { content: 'Ã®ÂÂ'; }
+
+.ss-mail.right:after,.ss-mail:before { content: '✉'; }
+
+.ss-inbox.right:after,.ss-inbox:before { content: 'Ã°Å¸â€œÂ¥'; }
+
+.ss-chat.right:after,.ss-chat:before { content: 'Ã°Å¸â€™Â¬'; }
+
+.ss-ellipsischat.right:after,.ss-ellipsischat:before { content: 'Ã®Å½â„¢'; }
+
+.ss-ellipsis.right:after,.ss-ellipsis:before { content: 'Ã¢â‚¬Â¦'; }
+
+.ss-user.right:after,.ss-user:before { content: 'Ã°Å¸â€˜Â¤'; }
+
+.ss-femaleuser.right:after,.ss-femaleuser:before { content: 'Ã°Å¸â€˜Â§'; }
+
+.ss-users.right:after,.ss-users:before { content: 'Ã°Å¸â€˜Â¥'; }
+
+.ss-cart.right:after,.ss-cart:before { content: 'Ã®â€â‚¬'; }
+
+.ss-creditcard.right:after,.ss-creditcard:before { content: 'Ã°Å¸â€™Â³'; }
+
+.ss-dollarsign.right:after,.ss-dollarsign:before { content: 'Ã°Å¸â€™Â²'; }
+
+.ss-barchart.right:after,.ss-barchart:before { content: 'Ã°Å¸â€œÅ '; }
+
+.ss-piechart.right:after,.ss-piechart:before { content: 'Ã®â€¢Â°'; }
+
+.ss-box.right:after,.ss-box:before { content: 'Ã°Å¸â€œÂ¦'; }
+
+.ss-home.right:after,.ss-home:before { content: 'Ã¢Å’â€š'; }
+
+.ss-buildings.right:after,.ss-buildings:before { content: 'Ã°Å¸ÂÂ¢'; }
+
+.ss-warehouse.right:after,.ss-warehouse:before { content: 'Ã®Ëœâ€š'; }
+
+.ss-globe.right:after,.ss-globe:before { content: 'Ã°Å¸Å’Å½'; }
+
+.ss-navigate.right:after,.ss-navigate:before { content: 'Ã®â„¢Â°'; }
+
+.ss-compass.right:after,.ss-compass:before { content: 'Ã®â„¢Â±'; }
+
+.ss-signpost.right:after,.ss-signpost:before { content: 'Ã®â„¢Â²'; }
+
+.ss-map.right:after,.ss-map:before { content: 'Ã®â„¢Â³'; }
+
+.ss-location.right:after,.ss-location:before { content: 'Ã®â€ºÂ'; }
+
+.ss-pin.right:after,.ss-pin:before { content: 'Ã°Å¸â€œÂ'; }
+
+.ss-database.right:after,.ss-database:before { content: 'Ã®Å¾Â '; }
+
+.ss-hdd.right:after,.ss-hdd:before { content: 'Ã®Å¾Â°'; }
+
+.ss-music.right:after,.ss-music:before { content: 'Ã¢â„¢Â«'; }
+
+.ss-mic.right:after,.ss-mic:before { content: 'Ã°Å¸Å½Â¤'; }
+
+.ss-volume.right:after,.ss-volume:before { content: 'Ã°Å¸â€Ë†'; }
+
+.ss-lowvolume.right:after,.ss-lowvolume:before { content: 'Ã°Å¸â€â€°'; }
+
+.ss-highvolume.right:after,.ss-highvolume:before { content: 'Ã°Å¸â€Å '; }
+
+.ss-airplay.right:after,.ss-airplay:before { content: 'Ã®Â â‚¬'; }
+
+.ss-camera.right:after,.ss-camera:before { content: 'Ã°Å¸â€œÂ·'; }
+
+.ss-picture.right:after,.ss-picture:before { content: 'Ã°Å¸Å’â€ž'; }
+
+.ss-video.right:after,.ss-video:before { content: 'Ã°Å¸â€œÂ¹'; }
+
+.ss-play.right:after,.ss-play:before { content: 'Ã¢â€“Â¶'; }
+
+.ss-pause.right:after,.ss-pause:before { content: 'Ã®Â¢Â '; }
+
+.ss-stop.right:after,.ss-stop:before { content: 'Ã¢â€“Â '; }
+
+.ss-record.right:after,.ss-record:before { content: 'Ã¢â€”Â'; }
+
+.ss-rewind.right:after,.ss-rewind:before { content: 'Ã¢ÂÂª'; }
+
+.ss-fastforward.right:after,.ss-fastforward:before { content: 'Ã¢ÂÂ©'; }
+
+.ss-skipback.right:after,.ss-skipback:before { content: 'Ã¢ÂÂ®'; }
+
+.ss-skipforward.right:after,.ss-skipforward:before { content: 'Ã¢ÂÂ­'; }
+
+.ss-eject.right:after,.ss-eject:before { content: 'Ã¢ÂÂ'; }
+
+.ss-repeat.right:after,.ss-repeat:before { content: 'Ã°Å¸â€Â'; }
+
+.ss-replay.right:after,.ss-replay:before { content: 'Ã¢â€ Âº'; }
+
+.ss-shuffle.right:after,.ss-shuffle:before { content: 'Ã°Å¸â€â‚¬'; }
+
+.ss-book.right:after,.ss-book:before { content: 'Ã°Å¸â€œâ€¢'; }
+
+.ss-openbook.right:after,.ss-openbook:before { content: 'Ã°Å¸â€œâ€“'; }
+
+.ss-notebook.right:after,.ss-notebook:before { content: 'Ã°Å¸â€œâ€œ'; }
+
+.ss-newspaper.right:after,.ss-newspaper:before { content: 'Ã°Å¸â€œÂ°'; }
+
+.ss-grid.right:after,.ss-grid:before { content: 'Ã®Â¦Â '; }
+
+.ss-rows.right:after,.ss-rows:before { content: 'Ã®Â¦Â¡'; }
+
+.ss-columns.right:after,.ss-columns:before { content: 'Ã®Â¦Â¢'; }
+
+.ss-thumbnails.right:after,.ss-thumbnails:before { content: 'Ã®Â¦Â£'; }
+
+.ss-filter.right:after,.ss-filter:before { content: 'Ã®Â¦Â°'; }
+
+.ss-desktop.right:after,.ss-desktop:before { content: 'Ã°Å¸â€™Â»'; }
+
+.ss-laptop.right:after,.ss-laptop:before { content: 'Ã®Â¨â‚¬'; }
+
+.ss-tablet.right:after,.ss-tablet:before { content: 'Ã®Â¨Â'; }
+
+.ss-cell.right:after,.ss-cell:before { content: 'Ã°Å¸â€œÂ±'; }
+
+.ss-battery.right:after,.ss-battery:before { content: 'Ã°Å¸â€â€¹'; }
+
+.ss-highbattery.right:after,.ss-highbattery:before { content: 'Ã®Â¨Â'; }
+
+.ss-mediumbattery.right:after,.ss-mediumbattery:before { content: 'Ã®Â¨â€˜'; }
+
+.ss-lowbattery.right:after,.ss-lowbattery:before { content: 'Ã®Â¨â€™'; }
+
+.ss-emptybattery.right:after,.ss-emptybattery:before { content: 'Ã®Â¨â€œ'; }
+
+.ss-lightbulb.right:after,.ss-lightbulb:before { content: 'Ã°Å¸â€™Â¡'; }
+
+.ss-downloadcloud.right:after,.ss-downloadcloud:before { content: 'Ã®Â¬â‚¬'; }
+
+.ss-download.right:after,.ss-download:before { content: 'Ã®Â¬Â'; }
+
+.ss-uploadcloud.right:after,.ss-uploadcloud:before { content: 'Ã®Â­â‚¬'; }
+
+.ss-upload.right:after,.ss-upload:before { content: 'Ã®Â­Â'; }
+
+.ss-fork.right:after,.ss-fork:before { content: 'Ã®Â®â‚¬'; }
+
+.ss-merge.right:after,.ss-merge:before { content: 'Ã®Â®Â'; }
+
+.ss-transfer.right:after,.ss-transfer:before { content: 'Ã¢â€¡â€ '; }
+
+.ss-refresh.right:after,.ss-refresh:before { content: 'Ã¢â€ Â»'; }
+
+.ss-sync.right:after,.ss-sync:before { content: 'Ã®Â®â€š'; }
+
+.ss-loading.right:after,.ss-loading:before { content: 'Ã®Â®Æ’'; }
+
+.ss-wifi.right:after,.ss-wifi:before { content: 'Ã®Â®â€ž'; }
+
+.ss-connection.right:after,.ss-connection:before { content: 'Ã®Â®â€¦'; }
+
+.ss-file.right:after,.ss-file:before { content: 'Ã°Å¸â€œâ€ž'; }
+
+.ss-folder.right:after,.ss-folder:before { content: 'Ã°Å¸â€œÂ'; }
+
+.ss-quote.right:after,.ss-quote:before { content: 'Ã¢â‚¬Å“'; }
+
+.ss-text.right:after,.ss-text:before { content: 'Ã®Â´â‚¬'; }
+
+.ss-font.right:after,.ss-font:before { content: 'Ã®Â´Â'; }
+
+.ss-print.right:after,.ss-print:before { content: 'Ã¢Å½â„¢'; }
+
+.ss-fax.right:after,.ss-fax:before { content: 'Ã°Å¸â€œÂ '; }
+
+.ss-list.right:after,.ss-list:before { content: 'Ã®ÂµÂ'; }
+
+.ss-layout.right:after,.ss-layout:before { content: 'Ã®Â¶Â '; }
+
+.ss-action.right:after,.ss-action:before { content: 'Ã®Â¸â‚¬'; }
+
+.ss-redirect.right:after,.ss-redirect:before { content: 'Ã¢â€ Âª'; }
+
+.ss-expand.right:after,.ss-expand:before { content: 'Ã¢Â¤Â¢'; }
+
+.ss-contract.right:after,.ss-contract:before { content: 'Ã®Â¸Â'; }
+
+.ss-help.right:after,.ss-help:before { content: 'Ã¢Ââ€œ'; }
+
+.ss-info.right:after,.ss-info:before { content: 'Ã¢â€žÂ¹'; }
+
+.ss-alert.right:after,.ss-alert:before { content: 'Ã¢Å¡Â '; }
+
+.ss-caution.right:after,.ss-caution:before { content: 'Ã¢â€ºâ€'; }
+
+.ss-logout.right:after,.ss-logout:before { content: 'Ã®Â¸â€š'; }
+
+.ss-plus.right:after,.ss-plus:before { content: '+'; }
+
+.ss-hyphen.right:after,.ss-hyphen:before { content: '-'; }
+
+.ss-check.right:after,.ss-check:before { content: 'Ã¢Å“â€œ'; }
+
+.ss-delete.right:after,.ss-delete:before { content: 'Ã¢ÂÂ¡'; }
+
+.ss-settings.right:after,.ss-settings:before { content: 'Ã¢Å¡â„¢'; }
+
+.ss-dashboard.right:after,.ss-dashboard:before { content: 'Ã¯â‚¬â‚¬'; }
+
+.ss-notifications.right:after,.ss-notifications:before { content: 'Ã°Å¸â€â€'; }
+
+.ss-notificationsdisabled.right:after,.ss-notificationsdisabled:before { content: 'Ã°Å¸â€â€¢'; }
+
+.ss-clock.right:after,.ss-clock:before { content: 'Ã¢ÂÂ²'; }
+
+.ss-stopwatch.right:after,.ss-stopwatch:before { content: 'Ã¢ÂÂ±'; }
+
+.ss-calendar.right:after,.ss-calendar:before { content: 'Ã°Å¸â€œâ€¦'; }
+
+.ss-addcalendar.right:after,.ss-addcalendar:before { content: 'Ã¯ÂÂ°'; }
+
+.ss-removecalendar.right:after,.ss-removecalendar:before { content: 'Ã¯ÂÂ±'; }
+
+.ss-checkcalendar.right:after,.ss-checkcalendar:before { content: 'Ã¯ÂÂ²'; }
+
+.ss-deletecalendar.right:after,.ss-deletecalendar:before { content: 'Ã¯ÂÂ³'; }
+
+.ss-briefcase.right:after,.ss-briefcase:before { content: 'Ã°Å¸â€™Â¼'; }
+
+.ss-cloud.right:after,.ss-cloud:before { content: 'Ã¢ËœÂ'; }
+
+.ss-droplet.right:after,.ss-droplet:before { content: 'Ã°Å¸â€™Â§'; }
+
+.ss-flask.right:after,.ss-flask:before { content: 'Ã¯â€œâ‚¬'; }
+
+.ss-up.right:after,.ss-up:before { content: 'Ã¢Â¬â€ '; }
+
+.ss-upright.right:after,.ss-upright:before { content: 'Ã¢Â¬Ë†'; }
+
+.ss-right.right:after,.ss-right:before { content: 'Ã¢Å¾Â¡'; }
+
+.ss-downright.right:after,.ss-downright:before { content: 'Ã¢Â¬Å '; }
+
+.ss-down.right:after,.ss-down:before { content: 'Ã¢Â¬â€¡'; }
+
+.ss-downleft.right:after,.ss-downleft:before { content: 'Ã¢Â¬â€¹'; }
+
+.ss-left.right:after,.ss-left:before { content: 'Ã¢Â¬â€¦'; }
+
+.ss-upleft.right:after,.ss-upleft:before { content: 'Ã¢Â¬â€°'; }
+
+.ss-navigateup.right:after,.ss-navigateup:before { content: 'Ã¯â€â‚¬'; }
+
+.ss-navigateright.right:after,.ss-navigateright:before { content: 'Ã¢â€“Â»'; }
+
+.ss-navigatedown.right:after,.ss-navigatedown:before { content: 'Ã¯â€Â'; }
+
+.ss-navigateleft.right:after,.ss-navigateleft:before { content: 'Ã¢â€”â€¦'; }
+
+.ss-directup.right:after,.ss-directup:before { content: 'Ã¢â€“Â´'; }
+
+.ss-directright.right:after,.ss-directright:before { content: 'Ã¢â€“Â¹'; }
+
+.ss-dropdown.right:after,.ss-dropdown:before { content: 'Ã¢â€“Â¾'; }
+
+.ss-directleft.right:after,.ss-directleft:before { content: 'Ã¢â€”Æ’'; }
+
+.ss-retweet.right:after,.ss-retweet:before { content: 'Ã¯Ëœâ‚¬'; }
+
+/* Legacy classes */
+.ss-volumelow.right:after,.ss-volumelow:before { content: 'Ã°Å¸â€â€°'; }
+
+.ss-volumehigh.right:after,.ss-volumehigh:before { content: 'Ã°Å¸â€Å '; }
+
+.ss-batteryhigh.right:after,.ss-batteryhigh:before { content: 'Ã®Â¨Â'; }
+
+.ss-batterymedium.right:after,.ss-batterymedium:before { content: 'Ã®Â¨â€˜'; }
+
+.ss-batterylow.right:after,.ss-batterylow:before { content: 'Ã®Â¨â€™'; }
+
+.ss-batteryempty.right:after,.ss-batteryempty:before { content: 'Ã®Â¨â€œ'; }
+
+.ss-clouddownload.right:after,.ss-clouddownload:before { content: 'Ã®Â¬â‚¬'; }
+
+.ss-cloudupload.right:after,.ss-cloudupload:before { content: 'Ã®Â­â‚¬'; }
+
+.ss-calendaradd.right:after,.ss-calendaradd:before { content: 'Ã¯ÂÂ°'; }
+
+.ss-calendarremove.right:after,.ss-calendarremove:before { content: 'Ã¯ÂÂ±'; }
+
+.ss-calendarcheck.right:after,.ss-calendarcheck:before { content: 'Ã¯ÂÂ²'; }
+
+.ss-calendardelete.right:after,.ss-calendardelete:before { content: 'Ã¯ÂÂ³'; }
+
+/*---------------JR styles added----------------------------*/
+
+#Gift_AidDiv img, #dd-bank-instructionsDiv img  {
+    max-width: 130px;
+height: auto
+}
+#DD_Gift_AmountDiv  .eaFormRadio input[type="radio"]:checked + label {
+    background-color: #EF662F;
+    color: #FFF;
+ border: 1px solid #EF662F;
+}
+form h2 {
+    font-size: 1.95rem;
+    line-height: 2.25rem;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #ccc;
+    padding-bottom: 10px;
+}
+form h3 {font-size: 1.30rem;
+    line-height: 38px;
+    line-height: 1.575rem;
+    margin-bottom: 10px;}
+form p {
+    line-height: 1.37rem;
+    margin-bottom: 10px;
+}
+
+
+#Q_In_memoryDiv {clear: both;
+    display: block;
+    margin-bottom: 20px;}
+
+
+
+
+
+#Gift_TypeDiv {margin-left: 18%;
+    margin-right: 10%;}
+#OtherInput {
+	    background-image: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sterling-symbol.png?v=1471621584000);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    font-size: 1.6em;
+	padding-left: 30px!important;
+    font-size: 1.6em;
+    padding: 9px;
+    margin-top: 20px;
+	display: block;
+}
+
+#No_Branch_MembershipDiv input {
+    margin-right: 5px;
+}
+#EmailDiv {
+    margin-top: 1em;
+}
+#eaFormButtonGroup_3 {display: none;}
+#PostcodeDiv {
+    background-color: #d0d0d0;
+    border-radius: 8px;
+    padding: 10px 5px 5px 10px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+#DD_Start_DateDiv {
+    clear: both;
+display: block;
+}
+#Email_opt_inDiv,  #Mail_opt_inDiv, #Marketing_permission_MSS_BuzzDiv, #Marketing_permission_PhoneDiv, #Marketing_permission_MailDiv, #Marketing_permission_TextDiv {
+    display: block;
+    background-color: #d4d4d4;
+    border-radius: 2px;
+   padding: 8px 15px;
+    margin-bottom: 15px;
+}
+#Connection_to_MSDiv {
+    margin-top: 1em;
+    border-bottom: solid 1px #fff;
+    margin-bottom: 1em;
+}
+.eaQuestionCheckboxFormFieldContainer label {
+    line-height: 1.4em;
+}
+#Connection_to_MSDiv .eaQuestionLabel {
+   line-height: 1.4em;
+    font-size: 1em;
+}
+#Email_opt_inDiv .eaFormElementLabel,  #Mail_opt_inDiv .eaFormElementLabel, #Marketing_permission_MSS_BuzzDiv .eaQuestionLabel, #Marketing_permission_PhoneDiv .eaQuestionLabel, #Marketing_permission_MailDiv .eaQuestionLabel, #Marketing_permission_TextDiv .eaQuestionLabel {
+    font-weight: bold;
+}
+#Email_opt_inDiv .eaFormField, #Mail_opt_inDiv .eaFormField, #Marketing_permission_MSS_BuzzDiv .eaQuestionRadioFormFieldContainer, #Marketing_permission_PhoneDiv .eaQuestionRadioFormFieldContainer, #Marketing_permission_MailDiv .eaQuestionRadioFormFieldContainer, #Marketing_permission_TextDiv .eaQuestionRadioFormFieldContainer {
+    margin-bottom: 0px;
+}
+.eaQuestionRadioFormFieldContainer br {
+    display: none;
+}
+#bank-val-msg {
+display: none;
+    background-color: #d4d4d4;
+    padding: 14px 8px 14px 40px;
+    font-weight: bold;
+    background-image: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/ms-alert.png?v=1471615252000);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.eaFormTextfield, .eaFormSelect, .eaFormZipTextfield, .eaFormZipExtTextfield, .eaFormTextArea, .eaQuestionTextfield, .eaQuestionTextArea, .eaMessageSalutation, .eaMessageContent, .eaMessageSignoff, .eaMessageSubject, .eaFriendFormTextfield, .eaSenderMailTemplateSalutation, .eaSenderMailTemplate, input #Donation_amountOther, #Donation_amountOther, .eaQuestionSelect, .eaSplitTextfield, .eaRadioTextfield, .eaSplitSelectfield, .eaSelectTextfield, .eaFormUneditableTextfield, .eaTripleSelectfield, .eaTripleTextfield {
+	font-family: inherit;
+	font-size: inherit;
+	padding: 15px 5px 15px 15px;
+	background: #FFF;
+border: 1px solid #4A4A4A;
+border-radius: 5px;
+	margin-left: 0;
+
+	}
+
+
+.eaFormTextfield:focus, .eaFormTextArea:focus, .eaQuestionTextfield:focus, .eaQuestionTextArea:focus, .eaMessageContent:focus, .eaMessageSalutation:focus, .eaMessageSignoff:focus, .eaMessageSubject:focus, .eaFriendFormTextfield:focus, .eaSenderMailTemplateSalutation:focus, .eaSenderMailTemplate:focus, .eaFormSelect:focus, .eaQuestionSelect:focus, .eaSplitTextfield:focus, .eaRadioTextfield:focus, .eaSplitSelectfield:focus, .eaSelectTextfield:focus, .eaFormUneditableTextfield:focus, .eaTripleSelectfield:focus, .eaTripleTextfield:focus {
+	background-color:#FFFFFF;
+	}
+.eaLabelSpacer {display: none;}
+
+#TitleDiv {
+    width: 33%;
+    float: left;
+}
+#First_NameDiv {
+    width: 65%;
+    float: left;
+}
+#Last_NameDiv {
+    clear: both;
+}
+
+/* textfield */
+/* div area for form field */
+.eaFormField {width: 100%; padding-top: 8px;     width: 100%;
+    padding-top: 8px;
+    margin-bottom: 20px;}
+.eaFormTextfield, .eaQuestionTextfield {
+	width: 95%;
+}
+.eaFormElementLabel, .eaQuestionLabel {
+width: 100%;
+position: relative;
+margin-left: 0px;
+margin-bottom: 7px;
+font-size: 1.05em;
+clear: both;
+ }
+
+ .eaFormElementLabel a, .eaFormElementLabel a:active {
+	 color: inherit;
+ }
+
+/* three split text field */
+.eaTripleTextfield
+{
+	width: 50px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.eaFormSelect, .eaQuestionSelect
+{
+	margin-bottom: 10px;
+	width: 83%;
+}
+.eaSubmitButton, #dd_button {background: #EF662F;
+    border: none;
+    border-radius: 7px;
+    color: #FFF;
+    transition: all .25s ease;
+    font-size: 1.425rem;
+    margin: 0;
+    position: relative;
+    max-width: 250px;
+    text-align: center;
+    display: block;
+    padding: 15px 40px;
+    background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/sbmt-arrow.png?v=1471960309000");
+    background-repeat: no-repeat;
+    background-position: 90% center;
+
+}
+
+
+.boxed-text, #Gift_AidDiv {
+    border: solid 1px #000;
+    padding: 20px;
+    font-size: .9em;
+    line-height: 1.3em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+background-color: #fff;
+}
+
+#DD_start_dateDiv {clear: both!important;}
+.boxed-text ul {
+    line-height: 1.37rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.dd-summary {
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    padding: 12px;
+}
+#In_Memory_Q_DDDiv .eaFormElementLabel, #In_Memory_Q_SingleDiv .eaFormElementLabel {display: none;}
+
+#In_Memory_Q_DDDiv, #In_Memory_Q_SingleDiv {clear: both;}
+.cards-frsb {
+    margin-top: 20px;
+    float: right;
+}
+.form-subhead {
+    background-color: #ddd;
+    padding: 9px 9px 9px 14px;
+    border-radius: 2px;
+    border: solid 1px #ccc;
+    clear: both;
+    margin-bottom: 1.2em;
+}
+.form-subhead:first-of-type {
+    margin-top: 0px;
+}
+#Credit_Card_ExpirationDiv {
+    width: 41%;
+    float: left;
+}
+
+#Credit_Card_Verification_ValueDiv {
+    width: 45%;
+    float: left;
+margin-bottom: 1.5em;
+}
+#Credit_Card_Verification_Value {
+    width: 75px;
+}
+#Membership-your-own-emailDiv, #Memb-your-own-emailDiv {
+    margin-bottom: 1em;
+}
+#Gift_TypeDiv .eaFormElementLabel, #Subscription_typeDiv .eaMandatoryFieldMarker, #Subscription_type_renewalDiv .eaMandatoryFieldMarker  {display: none;}
+/*--------------GIFT AID BOX-------------------*/
+
+#GiftAidDeclarationDiv label {
+    font-size: .9em;
+}
+
+#GiftAidDeclarationDiv {    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;}
+/*#Gift_TypeField .eaFormRadio label {margin-left: 7px;}
+  #Gift_TypeField .eaFormRadio{ padding: 6px 20px 6px 20px;
+    }
+ #Gift_TypeField .eaFormRadio .control-indicator{ margin: 1px 0 0 4px; }*/
+
+
+@media screen and (min-width: 28.75em){
+ .btn{ margin: 20px auto; max-width: 320px; text-align: center; }
+ .radio--style-a{ padding: 6px 20px 6px 30px; }
+ .radio--style-a .control-indicator{ margin: 1px 0 0 6px; }
+ .wrapper{ padding: 7px 30px; }
+ form{ margin: -120px auto 60px; }
+ form .radio--style-a{ width: auto; }
+ .site-footer{ text-align: left; }
+ .site-footer:after{ content: ""; display: table; clear: both; }
+ .site-footer__nav-list{ margin: 10px 0; }
+ .site-footer__nav-list__item:first-of-type a{ padding-left: 0; }
+ .site-footer__logos{ float: right; width: 25%; }
+ .hero__inner{ border-bottom-left-radius: 25px; padding: 0; }
+ /*#Gift_TypeField .eaFormRadio { padding: 5px 15px 5px 30px; }*/
+ .control-indicator{ margin: 1px 0 0 6px; }
+ #Gift_TypeDiv .eaFormRadio label, #Subscription_typeDiv .eaFormRadio label, #Subscription_type_renewalDiv .eaFormRadio label {
+    width: 49.3%;
+}
+ 
+  }
+
+@media screen and (min-width: 42.5em){
+ .form__row--half{ float: left; width: 50%; }
+ .input--currency{ float: right; width: 90%; }
+ .input--currency input{ padding: 15px 5px 15px 25px; }
+ .radio--style-b{ padding: 10px 30px; }
+ .radio--style-b.is-invalid:before{ display: inline-block; }
+ label[for=donate_amount_choose]{ line-height: 50px; line-height: 3.125rem; }
+ .cta__btn{ display: inline-block; font-size: 16px; font-size: 1rem; }
+ .cta__btn:first-of-type{ margin-right: 10px; }
+ .cta__btn:last-of-type{ margin-left: 10px; }
+ form{ margin: -180px auto 60px; width: 75%; }
+ .donation-widget__submit{ float: right; margin: 0; width: auto; }
+ .form__row--donate{ text-align: left; }
+ .hero__body{top: 40px;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);width: 60%;}
+ .link-strip:after{ content: ""; display: table; clear: both; }
+ .link-strip__list{ float: left; position: relative; width: 33.33%; }
+ .link-strip__list:after{ background: #4A4A4A; content: ''; position: absolute; top: 20%; right: 0; bottom: 20%; width: 1px; }
+ .link-strip__list:last-of-type:after{ display: none; }
+ #DD_Gift_AmountDiv .eaFormRadio label{ padding: 10px 30px; } }
+
+@media screen and (min-width: 60em){
+#OtherInput {
+	width: 150px;
+}
+ .radio--style-b{ float: left; margin: 0 1%; padding: 10px 40px; width: 31%; }
+ form{ margin: -230px auto 60px; padding: 20px 50px; width: 60%; }
+ .donation-widget__payment-logos img{ float: right; }
+ .site-footer__info{ float: left; padding-right: 10%; width: 65%; }
+ .hero__body{ width: 50%; }
+ .hero__title{ font-size: 60px; font-size: 3.75rem; margin-bottom: 5px; }
+ .hero__subtitle{ font-size: 26px; font-size: 1.625rem; line-height: 30px; line-height: 1.875rem; }
+ #DD_Gift_AmountDiv .eaFormRadio label{ float: left; margin: 0 1%;  width: 31%; } }
+
+/*# sourceMappingURL=main.css.map */
+
+/* override styles*/
+.eaFormField {
+    position: relative;
+}
+/*---JR removed center alignment as it affects second page, have center aligned individual elements on landing page instead-----------------*/
+.eaFullWidthContent {
+   /* text-align: center;*/
+}
+/*#Gift_TypeField .eaFormRadio .control-indicator {
+    height: 19px;
+    width: 19px;
+        line-height: 17px;
+}*/
+#Gift_TypeDiv {
+    margin: 0;
+}
+/*-----JR aligned the below center----------*/
+
+
+#DD_Gift_AmountDiv .eaFormRadio label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 42.5em){
+    #DD_Gift_AmountDiv .eaFormRadio label {
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 48%;
+    }
+    #OtherInput {
+        max-width: 95%;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    #In_Memory_Q_DDField .eaFormCheckbox label {
+    }
+    #In_Memory_Q_SingleField .eaFormCheckbox, #In_Memory_Q_DDDiv .eaFormCheckbox {
+        display: inline-block;
+        padding-left: 45px;
+    }
+
+    #In_Memory_Q_SingleField .eaFormCheckbox .control-indicator, #In_Memory_Q_DDDiv .eaFormCheckbox .control-indicator {
+        margin: 10px;
+    }
+}
+.form__row.form__row--half {
+    width: 100%;
+    float: none;
+    text-align: left;
+}
+
+@media screen and (max-width: 480px){
+.supporter-care {
+    font-size: 12px;
+}
+}
