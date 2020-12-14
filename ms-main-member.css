@@ -265,7 +265,17 @@ input[type=number],input[type=text] { background: #FFF; border: 1px solid #4A4A4
 
 .h2,h2 { font-size: 32px; font-size: 2rem; font-weight: lighter; line-height: 38px; line-height: 2.375rem; margin-bottom: 15px; }
 
-.banner { background: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/MS_banner_orange.png?v=1471422467000") repeat-x; background-size: 100% 100%; border-radius: 3px 3px 3px 25px; color: #FFF; margin-bottom: 50px; padding: 50px 20px; text-align: center; }
+.banner {
+	background-color: #D14900;
+	background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1692/MS_banner_orange.png?v=1471422467000");
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	border-radius: 3px 3px 3px 25px;
+	color: #FFF;
+	margin-bottom: 50px;
+	padding: 50px 20px;
+	text-align: center;
+}
 
 .banner .btn { font-family: 'DSariBold'; }
 
