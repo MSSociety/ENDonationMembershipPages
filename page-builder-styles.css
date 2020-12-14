@@ -73,7 +73,7 @@ input[type=checkbox]:not(.pbo__input__checkbox), input[type=radio]:not(.pbo__inp
 
 input[type=checkbox]:not(.pbo__input__checkbox):checked:after, input[type=radio]:not(.pbo__input__checkbox):checked:after {
   content: "✓";
-  color: #e35205;
+  color: #D14900;
   font-family: 'SSStandard';
   font-size: 10.4px;
   font-weight: bold;
@@ -97,7 +97,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__submit button {
     -webkit-appearance: button;
     cursor: pointer;
-    background: #e35205;
+    background: #D14900;
     border: none;
     border-radius: 7px;
     color: #FFF;
@@ -124,7 +124,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 }
 
 .en__field__error {
-    color: #e35205;
+    color: #D14900;
 }
 
 /* Gift Type (NB this is both Monthly/One-off and First-time member/Renewing) and Subscription Type */
@@ -158,7 +158,7 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 .en__field--NOT_TAGGED_56 label:hover, .en__field--NOT_TAGGED_56 input:checked ~ label, .en__field--NOT_TAGGED_56 input:hover ~ label,
 .en__field--NOT_TAGGED_57 label:hover, .en__field--NOT_TAGGED_57 input:checked ~ label, .en__field--NOT_TAGGED_57 input:hover ~ label {
   border-radius: 5px;
-  background: #e35205;
+  background: #D14900;
   color: #ffffff;
 }
 
@@ -204,9 +204,9 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
 }
 
 .en__field--NOT_TAGGED_10 label:hover, .en__field--NOT_TAGGED_10 input[type=radio]:checked ~ label {
-    background-color: #e35205;
+    background-color: #D14900;
     color: #FFF;
-    border: 1px solid #e35205;
+    border: 1px solid #D14900;
 }
 
 .en__field--NOT_TAGGED_10 input[type=text] {
