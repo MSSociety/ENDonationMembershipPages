@@ -60,11 +60,11 @@ body { background: #FFF; font-family: "DSariMedium", sans-serif; font-size: 16px
 
 img { height: auto; max-width: 100%; }
 
-a { color: #e35205; text-decoration: none; }
+a { color: #D14900; text-decoration: none; }
 
 a:focus,a:hover { text-decoration: underline; }
 
-a:focus { box-shadow: 0 0 2px 1px #e35205; outline: none; }
+a:focus { box-shadow: 0 0 2px 1px #D14900; outline: none; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
@@ -157,7 +157,7 @@ blockquote,body,caption,dd,dl,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,legend,o
     line-height: 2.3em;
 }
 #Gift_TypeDiv .eaFormRadio input[type="radio"]:checked + label, #Subscription_typeDiv .eaFormRadio input[type="radio"]:checked + label, #Subscription_type_renewalDiv .eaFormRadio input[type="radio"]:checked + label {
-    background-color: #e35205;
+    background-color: #D14900;
     color: #FFF;
 }
 #Gift_TypeDiv  .eaFormRadio label:hover, #Subscription_typeDiv .eaFormRadio label:hover, #Subscription_type_renewalDiv .eaFormRadio label:hover {
@@ -167,21 +167,21 @@ blockquote,body,caption,dd,dl,fieldset,figure,form,h1,h2,h3,h4,h5,h6,hr,legend,o
 /*-------------------------END MEMBERSHIP STYLES-----------------------------*/
 .btn:focus,.btn:hover { outline: none; text-decoration: none; }
 
-.btn--style-a { background: #FFF; border: 2px solid #e35205; border-radius: 7px; color: #e35205; }
+.btn--style-a { background: #FFF; border: 2px solid #D14900; border-radius: 7px; color: #D14900; }
 
-.btn--style-a:focus,.btn--style-a:hover { background: #e35205; color: #FFF; }
+.btn--style-a:focus,.btn--style-a:hover { background: #D14900; color: #FFF; }
 
 .btn--style-a i { margin-right: 10px; }
 
-.btn--style-b { background: #FFF; border: 2px solid #FFF; border-radius: 7px; color: #e35205; text-align: left; }
+.btn--style-b { background: #FFF; border: 2px solid #FFF; border-radius: 7px; color: #D14900; text-align: left; }
 
-.btn--style-b:focus,.btn--style-b:hover { background: #e35205; color: #FFF; }
+.btn--style-b:focus,.btn--style-b:hover { background: #D14900; color: #FFF; }
 
 .btn--style-b:after { position: absolute; top: 50%; right: 20px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
-.btn--style-c { background: #e35205; border: none; border-radius: 7px; color: #FFF; }
+.btn--style-c { background: #D14900; border: none; border-radius: 7px; color: #FFF; }
 
-input:focus { box-shadow: 0 0 2px 1px #e35205; outline: none; }
+input:focus { box-shadow: 0 0 2px 1px #D14900; outline: none; }
 
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 
@@ -201,7 +201,7 @@ input[type=number],input[type=text] { background: #FFF; border: 1px solid #4A4A4
 
 .control input { position: absolute; opacity: 0; z-index: -1; }
 
-.control input:checked~.control-indicator { background-color: #FFF; color: #e35205; }
+.control input:checked~.control-indicator { background-color: #FFF; color: #D14900; }
 
 .control input:active~.control-indicator { background-color: #f6ac8e; color: #FFF; }
 
@@ -217,7 +217,7 @@ input[type=number],input[type=text] { background: #FFF; border: 1px solid #4A4A4
 
 .radio--style-a { border-radius: 5px; padding: 20px 20px 20px 40px; }
 
-.radio--style-a.is-checked,.radio--style-a:hover { background: #e35205; color: #FFF; }
+.radio--style-a.is-checked,.radio--style-a:hover { background: #D14900; color: #FFF; }
 
 .radio--style-a.is-checked .control-indicator,.radio--style-a:hover .control-indicator { border-color: #FFF; }
 
@@ -225,11 +225,11 @@ input[type=number],input[type=text] { background: #FFF; border: 1px solid #4A4A4
 
 .radio--style-b { background: #FFF; border: 1px solid #4A4A4A; border-radius: 5px; font-size: 34px; font-size: 2.125rem; padding: 18px 12px; -webkit-transition: all .25s ease; transition: all .25s ease; }
 
-.radio--style-b.is-checked,.radio--style-b:hover { background: #e35205; border-color: #e35205; color: #FFF; }
+.radio--style-b.is-checked,.radio--style-b:hover { background: #D14900; border-color: #D14900; color: #FFF; }
 
 .checkbox .control-indicator { height: 18px; width: 18px; border: 1px solid #4A4A4A; padding: 1px; }
 
-.checkbox input:checked~.control-indicator { background-color: #e35205; border-color: #e35205; color: #FFF; }
+.checkbox input:checked~.control-indicator { background-color: #D14900; border-color: #D14900; color: #FFF; }
 
 .checkbox input:checked~.control-indicator:after { content: '✓'; font-family: 'SSStandard'; }
 
@@ -366,7 +366,7 @@ form .radio--style-a { width: 49%; }
 
 #Gift_TypeField .eaFormRadio:first-of-type { margin-right: 5px; }
 
-#Gift_TypeField .eaFormRadio.is-checked,#Gift_TypeField .eaFormRadio:hover { background: #e35205; color: #FFF; }
+#Gift_TypeField .eaFormRadio.is-checked,#Gift_TypeField .eaFormRadio:hover { background: #D14900; color: #FFF; }
 
 #Gift_TypeField .eaFormRadio.is-checked .control-indicator,#Gift_TypeField .eaFormRadio:hover .control-indicator { border-color: #FFF; }*/
 
@@ -376,7 +376,7 @@ form .radio--style-a { width: 49%; }
 
 #DD_Gift_AmountDiv .eaFormRadio label { background: #FFF; border: 1px solid #4A4A4A; border-radius: 5px; cursor: pointer; font-size: 34px; font-size: 2.125rem; padding: 18px 12px; -webkit-transition: all .25s ease; transition: all .25s ease; }
 
-#DD_Gift_AmountDiv .eaFormRadio label.is-checked,#DD_Gift_AmountDiv .eaFormRadio label:hover { background: #e35205; border-color: #e35205; color: #FFF; }
+#DD_Gift_AmountDiv .eaFormRadio label.is-checked,#DD_Gift_AmountDiv .eaFormRadio label:hover { background: #D14900; border-color: #D14900; color: #FFF; }
 
 #DD_Gift_AmountDiv .eaFormRadio input[type=radio] { display: none; }
 
@@ -387,7 +387,7 @@ form .radio--style-a { width: 49%; }
 
 /*#Gift_TypeField .eaFormRadio { position: relative; }
 
-#Gift_TypeField .eaFormRadio.is-checked .control-indicator { color: #e35205; }
+#Gift_TypeField .eaFormRadio.is-checked .control-indicator { color: #D14900; }
 
 #Gift_TypeField .eaFormRadio.is-checked .control-indicator:after { content: '✓'; font-family: 'SSStandard'; }
 
@@ -405,7 +405,7 @@ form .radio--style-a { width: 49%; }
 
 #In_Memory_Q_SingleField.eaFormField.is-checked .control-indicator,
 #In_Memory_Q_DDDiv.eaFormField.is-checked .control-indicator,
-#In_Memory_Q_DDField.eaFormField.is-checked .control-indicator  { color: #e35205; }
+#In_Memory_Q_DDField.eaFormField.is-checked .control-indicator  { color: #D14900; }
 
 #In_Memory_Q_SingleField.eaFormField.is-checked .control-indicator:after,
 #In_Memory_Q_DDDiv.eaFormField.is-checked .control-indicator:after,
@@ -813,9 +813,9 @@ html:hover [class^=ss-] { -ms-zoom: 1; }
 height: auto
 }
 #DD_Gift_AmountDiv  .eaFormRadio input[type="radio"]:checked + label {
-    background-color: #e35205;
+    background-color: #D14900;
     color: #FFF;
- border: 1px solid #e35205;
+ border: 1px solid #D14900;
 }
 form h2 {
     font-size: 1.95rem;
@@ -974,7 +974,7 @@ clear: both;
 	margin-bottom: 10px;
 	width: 83%;
 }
-.eaSubmitButton, #dd_button {background: #e35205;
+.eaSubmitButton, #dd_button {background: #D14900;
     border: none;
     border-radius: 7px;
     color: #FFF;
