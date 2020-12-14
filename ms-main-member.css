@@ -341,7 +341,7 @@ form .radio--style-a { width: 49%; }
 
 .hero { position: relative; }
 
-.hero__inner { overflow: hidden; padding: 0; position: relative; }
+.hero__inner { background-color: #838083; overflow: hidden; padding: 0; position: relative; }
 
 .hero__inner:after { background: rgba(0, 0, 0, 0.45); background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, transparent 100%); background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, transparent 100%); display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
