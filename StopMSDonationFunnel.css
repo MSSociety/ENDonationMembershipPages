@@ -420,6 +420,10 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
   display: inline;
 }
 
+.en__field__item--other {
+  vertical-align: top;
+}
+
 .en__submit {
   margin-top: 8px;
 }
@@ -463,6 +467,7 @@ input[type=radio] ~ .en__field__label {
 
 .en__field__error {
     color: #cd2026;
+    font-size: 1rem;
 }
 
 form h2 {
