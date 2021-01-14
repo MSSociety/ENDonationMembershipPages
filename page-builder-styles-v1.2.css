@@ -476,6 +476,10 @@ input[type=checkbox] ~ label, input[type=radio] ~ label {
   width: 100% !important;
 }
 
+.en__field__item--other {
+  vertical-align: top;
+}
+
 .en__field__input--other {
   margin: -1px 0 0 0 !important;
 }
@@ -490,7 +494,7 @@ input[type=radio] ~ .en__field__label {
 
 .en__field__error {
   color: #cd2026;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 6px;
 }
 
