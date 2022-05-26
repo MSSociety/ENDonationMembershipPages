@@ -2027,3 +2027,7 @@ input[type="checkbox"]~label,
 input[type="radio"]~label {
   font-size: 20px;
 }
+
+.en__field__element--radio .en__field__item {
+  margin-right: 20px;
+}
